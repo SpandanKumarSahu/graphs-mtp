@@ -1,0 +1,10 @@
+digraph G{
+"Snake"->"Reptile"[label="Private"]
+"MI"->"foo_str"[label="Public"]
+"Animal"->"LivingThing"[label="Protected"]
+"MI"->"ParentClass"[label="Public"]
+"Snake"->"ParentClass"[label="Private"]
+"Snake"->"Animal"[label="Protected"]
+"Reptile"->"LivingThing"[label="Public"]
+"DerivedClass1"->"ParentClass"[label="Public"]
+}

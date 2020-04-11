@@ -1,0 +1,2013 @@
+<?xml version="1.0" ?>
+<elf>
+   <EXECUTABLE binary="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/build/inherit">
+      <TranslationUnit>
+         
+  
+         <TemplateStubs>
+            
+    
+            <CXXConstructor access_specifier="Public" col="7" display_name="DerivedClass1()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="101410785021" isDecl="True" isDef="True" lex_parent_id="101807164044" line="36" linkage_kind="external" linkage_name="_ZN13DerivedClass1C1Ev" range.end="[36:20]" range.start="[36:7]" return_type="void" spelling="DerivedClass1" storage_class="default_auto" type="void () noexcept" usr="c:@S@DerivedClass1@F@DerivedClass1#" visibility="default"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="8" display_name="foo_str(const foo_str &amp;)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="const foo_str &amp;" id="100524783549" isDecl="True" isDef="True" lex_parent_id="100440782241" line="6" linkage_kind="external" linkage_name="_ZN7foo_strC1ERKS_" range.end="[6:15]" range.start="[6:8]" return_type="void" spelling="foo_str" storage_class="default_auto" type="void (const foo_str &amp;) noexcept" usr="c:@S@foo_str@F@foo_str#&amp;1$@S@foo_str#" visibility="default"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="7" display_name="Snake()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="103803331192" isDecl="True" isDef="True" lex_parent_id="102713208203" line="107" linkage_kind="external" linkage_name="_ZN5SnakeC1Ev" range.end="[107:12]" range.start="[107:7]" return_type="void" spelling="Snake" storage_class="default_auto" type="void () noexcept(false)" usr="c:@S@Snake@F@Snake#" visibility="default"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="operator=(foo_str &amp;&amp;)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="foo_str &amp;&amp;" id="100093055462" isDecl="True" isDef="True" lex_parent_id="100440782241" line="6" linkage_kind="external" linkage_name="_ZN7foo_straSEOS_" range.end="[6:15]" range.start="[6:8]" return_type="foo_str &amp;" spelling="operator=" storage_class="default_auto" type="foo_str &amp;(foo_str &amp;&amp;) noexcept" usr="c:@S@foo_str@F@operator=#&amp;&amp;$@S@foo_str#" visibility="default"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="8" display_name="foo_str()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="102868774577" isDecl="True" isDef="True" lex_parent_id="100440782241" line="6" linkage_kind="external" linkage_name="_ZN7foo_strC1Ev" range.end="[6:15]" range.start="[6:8]" return_type="void" spelling="foo_str" storage_class="default_auto" type="void () noexcept" usr="c:@S@foo_str@F@foo_str#" visibility="default"/>
+            
+  
+         </TemplateStubs>
+         
+  
+         <StructDecl col="8" display_name="foo_str" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100440782241" isDecl="True" isDef="True" lex_parent_id="101889469403" line="6" linkage_kind="external" range.end="[11:2]" range.start="[6:1]" size="12" spelling="foo_str" type="foo_str" usr="c:@S@foo_str" visibility="default">
+            
+    
+            <FieldDecl access_specifier="Public" col="7" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102160770096" isDecl="True" isDef="True" lex_parent_id="100440782241" line="7" linkage_kind="external" offset="0" range.end="[7:8]" range.start="[7:3]" size="4" spelling="x" type="int" usr="c:@S@foo_str@FI@x" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="7" display_name="y" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102909343051" isDecl="True" isDef="True" lex_parent_id="100440782241" line="8" linkage_kind="external" offset="4" range.end="[8:8]" range.start="[8:3]" size="4" spelling="y" type="int" usr="c:@S@foo_str@FI@y" visibility="default"/>
+            
+    
+            <CXXAccessSpecifier access_specifier="Private" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101703203645" isDecl="True" isDef="True" lex_parent_id="100440782241" line="9" range.end="[9:9]" range.start="[9:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Private" col="7" display_name="z" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103134680686" isDecl="True" isDef="True" lex_parent_id="100440782241" line="10" linkage_kind="external" offset="8" range.end="[10:8]" range.start="[10:3]" size="4" spelling="z" type="int" usr="c:@S@foo_str@FI@z" visibility="default"/>
+            
+  
+         </StructDecl>
+         
+  
+         <FunctionDecl col="16" def_id="202883818811" display_name="foo(struct foo_str)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="struct foo_str" id="102344384494" isDecl="True" lex_parent_id="101889469403" line="13" linkage_kind="external" linkage_name="_Z3foo7foo_str" range.end="[13:37]" range.start="[13:1]" return_type="struct foo_str" spelling="foo" storage_class="default_auto" type="struct foo_str (struct foo_str)" usr="c:@F@foo#$@S@foo_str#" visibility="default">
+            
+    
+            <TypeRef col="8" def_id="100440782241" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100782280163" isRef="True" line="13" range.end="[13:15]" range.start="[13:8]" spelling="struct foo_str" type="foo_str"/>
+            
+    
+            <ParmDecl col="35" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104106297673" isDecl="True" isDef="True" lex_parent_id="102344384494" line="13" linkage_kind="auto" range.end="[13:36]" range.start="[13:20]" spelling="x" storage_class="default_auto" type="struct foo_str" usr="c:foo.h@143@F@foo#$@S@foo_str#@x" visibility="default">
+               
+      
+               <TypeRef col="27" def_id="100440782241" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100782280163" isRef="True" line="13" range.end="[13:34]" range.start="[13:27]" spelling="struct foo_str" type="foo_str"/>
+               
+    
+            </ParmDecl>
+            
+  
+         </FunctionDecl>
+         
+  
+         <ClassDecl col="7" display_name="ParentClass" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103889420436" isDecl="True" isDef="True" lex_parent_id="101889469403" line="16" linkage_kind="external" range.end="[33:2]" range.start="[16:1]" spelling="ParentClass" type="ParentClass" usr="c:@S@ParentClass" visibility="default">
+            
+    
+            <FieldDecl access_specifier="Private" col="7" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101346893938" isDecl="True" isDef="True" lex_parent_id="103889420436" line="17" linkage_kind="external" offset="8" range.end="[17:8]" range.start="[17:3]" size="4" spelling="x" type="int" usr="c:@S@ParentClass@FI@x" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Private" col="10" display_name="y" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100912876953" isDecl="True" isDef="True" lex_parent_id="103889420436" line="17" linkage_kind="external" offset="12" range.end="[17:11]" range.start="[17:3]" size="4" spelling="y" type="int" usr="c:@S@ParentClass@FI@y" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Private" col="13" display_name="z" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104166681645" isDecl="True" isDef="True" lex_parent_id="103889420436" line="17" linkage_kind="external" offset="16" range.end="[17:14]" range.start="[17:3]" size="4" spelling="z" type="int" usr="c:@S@ParentClass@FI@z" visibility="default"/>
+            
+    
+            <VarDecl access_specifier="Private" col="14" def_id="102672429341" display_name="a" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100673756035" isDecl="True" lex_parent_id="103889420436" line="18" linkage_kind="external" range.end="[18:15]" range.start="[18:3]" spelling="a" storage_class="static" type="int" usr="c:@S@ParentClass@a" visibility="default"/>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100903090239" isDecl="True" isDef="True" lex_parent_id="103889420436" line="19" range.end="[19:8]" range.start="[19:1]" usr="c:"/>
+            
+    
+            <VarDecl access_specifier="Public" col="20" def_id="103458961946" display_name="b" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103277573897" isDecl="True" lex_parent_id="103889420436" line="20" linkage_kind="external" range.end="[20:21]" range.start="[20:3]" spelling="b" storage_class="static" type="const int" usr="c:@S@ParentClass@b" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="7" display_name="c" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101848948381" isDecl="True" isDef="True" lex_parent_id="103889420436" line="21" linkage_kind="external" offset="20" range.end="[21:8]" range.start="[21:3]" size="4" spelling="c" type="int" usr="c:@S@ParentClass@FI@c" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="9" display_name="d" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102754981009" isDecl="True" isDef="True" lex_parent_id="103889420436" line="22" linkage_kind="external" offset="24" range.end="[22:10]" range.start="[22:3]" size="4" spelling="d" type="float" usr="c:@S@ParentClass@FI@d" visibility="default"/>
+            
+    
+            <EnumDecl access_specifier="Public" col="8" display_name="days" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103292456156" isDecl="True" isDef="True" lex_parent_id="103889420436" line="23" linkage_kind="external" range.end="[23:49]" range.start="[23:3]" spelling="days" type="ParentClass::days" usr="c:@S@ParentClass@E@days" visibility="default">
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="13" display_name="sun" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102609072568" isDecl="True" isDef="True" lex_parent_id="103292456156" line="23" linkage_kind="external" range.end="[23:16]" range.start="[23:13]" spelling="sun" type="ParentClass::days" usr="c:@S@ParentClass@E@days@sun" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="18" display_name="mon" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101808537163" isDecl="True" isDef="True" lex_parent_id="103292456156" line="23" linkage_kind="external" range.end="[23:21]" range.start="[23:18]" spelling="mon" type="ParentClass::days" usr="c:@S@ParentClass@E@days@mon" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="23" display_name="tue" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102261622387" isDecl="True" isDef="True" lex_parent_id="103292456156" line="23" linkage_kind="external" range.end="[23:26]" range.start="[23:23]" spelling="tue" type="ParentClass::days" usr="c:@S@ParentClass@E@days@tue" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="28" display_name="wed" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101469655496" isDecl="True" isDef="True" lex_parent_id="103292456156" line="23" linkage_kind="external" range.end="[23:31]" range.start="[23:28]" spelling="wed" type="ParentClass::days" usr="c:@S@ParentClass@E@days@wed" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="33" display_name="thrus" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101780044710" isDecl="True" isDef="True" lex_parent_id="103292456156" line="23" linkage_kind="external" range.end="[23:38]" range.start="[23:33]" spelling="thrus" type="ParentClass::days" usr="c:@S@ParentClass@E@days@thrus" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="40" display_name="fri" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100448278105" isDecl="True" isDef="True" lex_parent_id="103292456156" line="23" linkage_kind="external" range.end="[23:43]" range.start="[23:40]" spelling="fri" type="ParentClass::days" usr="c:@S@ParentClass@E@days@fri" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="45" display_name="sat" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100152287774" isDecl="True" isDef="True" lex_parent_id="103292456156" line="23" linkage_kind="external" range.end="[23:48]" range.start="[23:45]" spelling="sat" type="ParentClass::days" usr="c:@S@ParentClass@E@days@sat" visibility="default"/>
+               
+    
+            </EnumDecl>
+            
+    
+            <UnionDecl access_specifier="Public" col="9" display_name="month" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102005762127" isDecl="True" isDef="True" lex_parent_id="103889420436" line="24" linkage_kind="external" range.end="[27:4]" range.start="[24:3]" spelling="month" type="ParentClass::month" usr="c:@S@ParentClass@U@month" visibility="default">
+               
+      
+               <FieldDecl access_specifier="Public" col="9" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104122857777" isDecl="True" isDef="True" lex_parent_id="102005762127" line="25" linkage_kind="external" range.end="[25:10]" range.start="[25:5]" spelling="x" type="int" usr="c:@S@ParentClass@U@month@FI@x" visibility="default"/>
+               
+      
+               <FieldDecl access_specifier="Public" col="11" display_name="f" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102177005309" isDecl="True" isDef="True" lex_parent_id="102005762127" line="26" linkage_kind="external" range.end="[26:12]" range.start="[26:5]" spelling="f" type="float" usr="c:@S@ParentClass@U@month@FI@f" visibility="default"/>
+               
+    
+            </UnionDecl>
+            
+    
+            <CXXMethod access_specifier="Public" col="16" display_name="hello()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="102446479921" isCXXVirtual="True" isDecl="True" isDef="True" lex_parent_id="103889420436" line="28" linkage_kind="external" linkage_name="_ZN11ParentClass5helloEv" mangled_name="_ZN11ParentClass5helloEv" range.end="[30:4]" range.start="[28:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void ()" usr="c:@S@ParentClass@F@hello#" visibility="default">
+               
+      
+               <CompoundStmt col="23" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102581643007" line="28" range.end="[30:4]" range.start="[28:23]" sem_parent_id="102446479921" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103073201822" isAssignment="True" line="29" range.end="[29:33]" range.start="[29:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="101346893938" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102089780275" line="29" range.end="[29:12]" range.start="[29:5]" spelling="x" type="int">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101199281439" line="29" range.end="[29:9]" range.start="[29:5]" type="ParentClass *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <BinaryOperator col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100329184934" line="29" range.end="[29:33]" range.start="[29:15]" type="int">
+                        
+            
+                        <UnexposedExpr col="15" def_id="100912876953" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103976230332" line="29" range.end="[29:16]" range.start="[29:15]" spelling="y" type="int">
+                           
+              
+                           <MemberRefExpr col="15" def_id="100912876953" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102829679260" line="29" range.end="[29:16]" range.start="[29:15]" spelling="y" type="int"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+            
+                        <UnexposedExpr col="32" def_id="102672429341" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103778406355" line="29" range.end="[29:33]" range.start="[29:19]" spelling="a" type="int">
+                           
+              
+                           <DeclRefExpr col="32" def_id="102672429341" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102611021819" line="29" range.end="[29:33]" range.start="[29:19]" spelling="a" type="int">
+                              
+                
+                              <TypeRef col="19" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101821689001" isRef="True" line="29" range.end="[29:30]" range.start="[29:19]" spelling="class ParentClass" type="ParentClass"/>
+                              
+              
+                           </DeclRefExpr>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </BinaryOperator>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <FriendDecl access_specifier="Public" col="10" def_id="101703203645" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103088049882" isDecl="True" lex_parent_id="103889420436" line="31" range.end="[31:28]" range.start="[31:3]" usr="c:">
+               
+      
+               <TypeRef col="16" def_id="101557133083" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102013565360" isRef="True" line="31" range.end="[31:28]" range.start="[31:16]" spelling="class ParentClass1" type="ParentClass1"/>
+               
+    
+            </FriendDecl>
+            
+    
+            <FriendDecl access_specifier="Public" col="15" def_id="101703203645" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100637741787" isDecl="True" lex_parent_id="103889420436" line="32" range.end="[32:40]" range.start="[32:3]" usr="c:">
+               
+      
+               <FunctionDecl access_specifier="Public" col="15" def_id="202651437238" display_name="accessFriendClassGlobal()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="103633422624" isDecl="True" lex_parent_id="103889420436" line="32" linkage_kind="external" linkage_name="_Z23accessFriendClassGlobalv" range.end="[32:40]" range.start="[32:3]" return_type="void" sem_parent_id="101889469403" spelling="accessFriendClassGlobal" storage_class="default_auto" type="void ()" usr="c:@F@accessFriendClassGlobal#" visibility="default"/>
+               
+    
+            </FriendDecl>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="DerivedClass1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101807164044" isDecl="True" isDef="True" lex_parent_id="101889469403" line="36" linkage_kind="external" range.end="[50:2]" range.start="[36:1]" spelling="DerivedClass1" type="DerivedClass1" usr="c:@S@DerivedClass1" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="29" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103656283372" inheritance_kind="Public" isRef="True" line="36" range.end="[36:40]" range.start="[36:22]" spelling="class ParentClass" type="ParentClass">
+               
+      
+               <TypeRef col="29" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101821689001" isRef="True" line="36" range.end="[36:40]" range.start="[36:29]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100035600576" isDecl="True" isDef="True" lex_parent_id="101807164044" line="37" range.end="[37:8]" range.start="[37:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="hello()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="102451926470" isCXXVirtual="True" isDecl="True" isDef="True" lex_parent_id="101807164044" line="38" linkage_kind="external" linkage_name="_ZN13DerivedClass15helloEv" mangled_name="_ZN13DerivedClass15helloEv" range.end="[41:4]" range.start="[38:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void ()" usr="c:@S@DerivedClass1@F@hello#" visibility="default">
+               
+      
+               <CompoundStmt col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103450683722" line="38" range.end="[41:4]" range.start="[38:15]" sem_parent_id="102451926470" storage_class="default_auto">
+                  
+        
+                  <CompoundAssignOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101821454055" isAssignment="True" line="39" range.end="[39:30]" range.start="[39:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="101848948381" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103199111847" line="39" range.end="[39:12]" range.start="[39:5]" spelling="c" type="int">
+                        
+            
+                        <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100487613898" line="39" range.end="[39:9]" range.start="[39:5]" type="ParentClass *">
+                           
+              
+                           <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100352587124" line="39" range.end="[39:9]" range.start="[39:5]" type="DerivedClass1 *"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <UnexposedExpr col="29" def_id="103458961946" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100296204375" line="39" range.end="[39:30]" range.start="[39:16]" spelling="b" type="int">
+                        
+            
+                        <DeclRefExpr col="29" def_id="103458961946" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101848979850" line="39" range.end="[39:30]" range.start="[39:16]" spelling="b" type="const int">
+                           
+              
+                           <TypeRef col="16" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101821689001" isRef="True" line="39" range.end="[39:27]" range.start="[39:16]" spelling="class ParentClass" type="ParentClass"/>
+                           
+            
+                        </DeclRefExpr>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </CompoundAssignOperator>
+                  
+        
+                  <UnaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103268589350" line="40" range.end="[40:16]" range.start="[40:5]" type="int">
+                     
+          
+                     <ParenExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103961135608" line="40" range.end="[40:14]" range.start="[40:5]" type="int">
+                        
+            
+                        <MemberRefExpr col="12" def_id="101848948381" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104222099300" line="40" range.end="[40:13]" range.start="[40:6]" spelling="c" type="int">
+                           
+              
+                           <UnexposedExpr col="6" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102008667001" line="40" range.end="[40:10]" range.start="[40:6]" type="ParentClass *">
+                              
+                
+                              <CXXThisExpr col="6" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103803052399" line="40" range.end="[40:10]" range.start="[40:6]" type="DerivedClass1 *"/>
+                              
+              
+                           </UnexposedExpr>
+                           
+            
+                        </MemberRefExpr>
+                        
+          
+                     </ParenExpr>
+                     
+        
+                  </UnaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="hello(int)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="int" id="101783148214" isDecl="True" isDef="True" lex_parent_id="101807164044" line="43" linkage_kind="external" linkage_name="_ZN13DerivedClass15helloEi" mangled_name="_ZN13DerivedClass15helloEi" range.end="[45:4]" range.start="[43:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void (int)" usr="c:@S@DerivedClass1@F@hello#I#" visibility="default">
+               
+      
+               <ParmDecl col="18" display_name="i" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101090505190" isDecl="True" isDef="True" lex_parent_id="101783148214" line="43" linkage_kind="auto" offset="0xc" range.end="[43:19]" range.start="[43:14]" size="4" spelling="i" storage_class="default_auto" type="int" usr="c:foo.h@718@S@DerivedClass1@F@hello#I#@i" visibility="default"/>
+               
+      
+               <CompoundStmt col="20" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100857257587" line="43" range.end="[45:4]" range.start="[43:20]" sem_parent_id="101783148214" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103325688120" isAssignment="True" line="44" range.end="[44:20]" range.start="[44:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="101848948381" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104257440872" line="44" range.end="[44:12]" range.start="[44:5]" spelling="c" type="int">
+                        
+            
+                        <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102286648003" line="44" range.end="[44:9]" range.start="[44:5]" type="ParentClass *">
+                           
+              
+                           <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101746822392" line="44" range.end="[44:9]" range.start="[44:5]" type="DerivedClass1 *"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <UnexposedExpr col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103771106474" line="44" range.end="[44:20]" range.start="[44:15]" type="int">
+                        
+            
+                        <BinaryOperator col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101408514626" isAssignment="True" line="44" range.end="[44:20]" range.start="[44:15]" type="int">
+                           
+              
+                           <DeclRefExpr col="15" def_id="101090505190" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102751494726" line="44" range.end="[44:16]" range.start="[44:15]" spelling="i" type="int"/>
+                           
+              
+                           <IntegerLiteral col="19" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102964580889" line="44" range.end="[44:20]" range.start="[44:19]" type="int"/>
+                           
+            
+                        </BinaryOperator>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="hello(double)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="double" id="104006417771" isDecl="True" isDef="True" lex_parent_id="101807164044" line="47" linkage_kind="external" linkage_name="_ZN13DerivedClass15helloEd" mangled_name="_ZN13DerivedClass15helloEd" range.end="[49:4]" range.start="[47:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void (double)" usr="c:@S@DerivedClass1@F@hello#d#" visibility="default">
+               
+      
+               <ParmDecl col="21" display_name="z" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100620950235" isDecl="True" isDef="True" lex_parent_id="104006417771" line="47" linkage_kind="auto" offset="0x10" range.end="[47:22]" range.start="[47:14]" size="8" spelling="z" storage_class="default_auto" type="double" usr="c:foo.h@765@S@DerivedClass1@F@hello#d#@z" visibility="default"/>
+               
+      
+               <CompoundStmt col="23" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100911315646" line="47" range.end="[49:4]" range.start="[47:23]" sem_parent_id="104006417771" storage_class="default_auto">
+                  
+        
+                  <CompoundAssignOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103012178811" isAssignment="True" line="48" range.end="[48:17]" range.start="[48:5]" type="float">
+                     
+          
+                     <MemberRefExpr col="11" def_id="102754981009" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102769143490" line="48" range.end="[48:12]" range.start="[48:5]" spelling="d" type="float">
+                        
+            
+                        <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103709017106" line="48" range.end="[48:9]" range.start="[48:5]" type="ParentClass *">
+                           
+              
+                           <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102508341905" line="48" range.end="[48:9]" range.start="[48:5]" type="DerivedClass1 *"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <UnexposedExpr col="16" def_id="100620950235" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104158615451" line="48" range.end="[48:17]" range.start="[48:16]" spelling="z" type="double">
+                        
+            
+                        <DeclRefExpr col="16" def_id="100620950235" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101861477930" line="48" range.end="[48:17]" range.start="[48:16]" spelling="z" type="double"/>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </CompoundAssignOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="ParentClass1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101557133083" isDecl="True" isDef="True" lex_parent_id="101889469403" line="53" linkage_kind="external" range.end="[59:2]" range.start="[53:1]" spelling="ParentClass1" type="ParentClass1" usr="c:@S@ParentClass1" visibility="default">
+            
+    
+            <FieldDecl access_specifier="Private" col="15" display_name="p" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104081478593" isDecl="True" isDef="True" lex_parent_id="101557133083" line="54" linkage_kind="external" range.end="[54:16]" range.start="[54:3]" spelling="p" type="ParentClass" usr="c:@S@ParentClass1@FI@p" visibility="default">
+               
+      
+               <TypeRef col="3" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101821689001" isRef="True" line="54" range.end="[54:14]" range.start="[54:3]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </FieldDecl>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100021459504" isDecl="True" isDef="True" lex_parent_id="101557133083" line="55" range.end="[55:8]" range.start="[55:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="accessFriendClass()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="101907124604" isDecl="True" isDef="True" lex_parent_id="101557133083" line="56" linkage_kind="external" linkage_name="_ZN12ParentClass117accessFriendClassEv" range.end="[58:4]" range.start="[56:3]" return_type="void" spelling="accessFriendClass" storage_class="default_auto" type="void ()" usr="c:@S@ParentClass1@F@accessFriendClass#" visibility="default">
+               
+      
+               <CompoundStmt col="27" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101152137617" line="56" range.end="[58:4]" range.start="[56:27]" sem_parent_id="101907124604" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100067773125" isAssignment="True" line="57" range.end="[57:12]" range.start="[57:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="7" def_id="101346893938" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103631046791" line="57" range.end="[57:8]" range.start="[57:5]" spelling="x" type="int">
+                        
+            
+                        <MemberRefExpr col="5" def_id="104081478593" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102269772184" line="57" range.end="[57:6]" range.start="[57:5]" spelling="p" type="ParentClass"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <IntegerLiteral col="11" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102735391537" line="57" range.end="[57:12]" range.start="[57:11]" type="int"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </ClassDecl>
+         
+  
+         <StructDecl col="8" display_name="MI" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101402665881" isDecl="True" isDef="True" lex_parent_id="101889469403" line="62" linkage_kind="external" range.end="[67:2]" range.start="[62:1]" spelling="MI" type="MI" usr="c:@S@MI" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="12" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100235888462" inheritance_kind="Public" isRef="True" line="62" range.end="[62:23]" range.start="[62:12]" spelling="class ParentClass" type="ParentClass">
+               
+      
+               <TypeRef col="12" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101821689001" isRef="True" line="62" range.end="[62:23]" range.start="[62:12]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXBaseClassSpecifier col="32" def_id="100440782241" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102055612145" inheritance_kind="Public" isRef="True" line="62" range.end="[62:39]" range.start="[62:25]" spelling="struct foo_str" type="foo_str">
+               
+      
+               <TypeRef col="32" def_id="100440782241" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100782280163" isRef="True" line="62" range.end="[62:39]" range.start="[62:32]" spelling="struct foo_str" type="foo_str"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101870664324" isDecl="True" isDef="True" lex_parent_id="101402665881" line="63" range.end="[63:8]" range.start="[63:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="7" display_name="do_nothing()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="102873800654" isDecl="True" isDef="True" lex_parent_id="101402665881" line="64" linkage_kind="external" linkage_name="_ZN2MI10do_nothingEv" range.end="[66:4]" range.start="[64:3]" return_type="int" spelling="do_nothing" storage_class="default_auto" type="int ()" usr="c:@S@MI@F@do_nothing#" visibility="default">
+               
+      
+               <CompoundStmt col="19" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102494861908" line="64" range.end="[66:4]" range.start="[64:19]" sem_parent_id="102873800654" storage_class="default_auto">
+                  
+        
+                  <ReturnStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103562535326" line="65" range.end="[65:13]" range.start="[65:5]">
+                     
+          
+                     <IntegerLiteral col="12" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103605915516" line="65" range.end="[65:13]" range.start="[65:12]" type="int"/>
+                     
+        
+                  </ReturnStmt>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </StructDecl>
+         
+  
+         <ClassDecl col="7" display_name="LivingThing" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101471049563" isDecl="True" isDef="True" lex_parent_id="101889469403" line="70" linkage_kind="external" range.end="[80:2]" range.start="[70:1]" size="1" spelling="LivingThing" type="LivingThing" usr="c:@S@LivingThing" visibility="default">
+            
+    
+            <CXXAccessSpecifier access_specifier="Protected" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103046341702" isDecl="True" isDef="True" lex_parent_id="101471049563" line="71" range.end="[71:11]" range.start="[71:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Protected" col="10" display_name="isBreathing" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100218304836" isDecl="True" isDef="True" lex_parent_id="101471049563" line="72" linkage_kind="external" offset="0" range.end="[72:21]" range.start="[72:5]" size="1" spelling="isBreathing" type="bool" usr="c:@S@LivingThing@FI@isBreathing" visibility="default"/>
+            
+    
+            <CXXMethod access_specifier="Protected" col="10" display_name="breathe()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="102694670267" isDecl="True" isDef="True" lex_parent_id="101471049563" line="73" linkage_kind="external" linkage_name="_ZN11LivingThing7breatheEv" mangled_name="_ZN11LivingThing7breatheEv" range.end="[75:6]" range.start="[73:5]" return_type="void" spelling="breathe" storage_class="default_auto" type="void ()" usr="c:@S@LivingThing@F@breathe#" visibility="default">
+               
+      
+               <CompoundStmt col="20" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100309645255" line="73" range.end="[75:6]" range.start="[73:20]" sem_parent_id="102694670267" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100697458200" isAssignment="True" line="74" range.end="[74:33]" range.start="[74:9]" type="bool">
+                     
+          
+                     <MemberRefExpr col="15" def_id="100218304836" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103343944583" line="74" range.end="[74:26]" range.start="[74:9]" spelling="isBreathing" type="bool">
+                        
+            
+                        <CXXThisExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103022977419" line="74" range.end="[74:13]" range.start="[74:9]" type="LivingThing *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="29" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101052915853" line="74" range.end="[74:33]" range.start="[74:29]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100436741791" isDecl="True" isDef="True" lex_parent_id="101471049563" line="76" range.end="[76:8]" range.start="[76:1]" usr="c:"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="3" display_name="LivingThing()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="102542201437" isDecl="True" isDef="True" lex_parent_id="101471049563" line="77" linkage_kind="external" linkage_name="_ZN11LivingThingC1Ev" mangled_name="_ZN11LivingThingC4Ev" range.end="[79:4]" range.start="[77:3]" return_type="void" spelling="LivingThing" storage_class="default_auto" type="void ()" usr="c:@S@LivingThing@F@LivingThing#" visibility="default">
+               
+      
+               <CompoundStmt col="16" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103637346789" line="77" range.end="[79:4]" range.start="[77:16]" sem_parent_id="102542201437" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101138777474" isAssignment="True" line="78" range.end="[78:30]" range.start="[78:5]" type="bool">
+                     
+          
+                     <MemberRefExpr col="11" def_id="100218304836" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101404065683" line="78" range.end="[78:22]" range.start="[78:5]" spelling="isBreathing" type="bool">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102728417247" line="78" range.end="[78:9]" range.start="[78:5]" type="LivingThing *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="25" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103579397121" line="78" range.end="[78:30]" range.start="[78:25]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXConstructor>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="Animal" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101502865278" isDecl="True" isDef="True" lex_parent_id="101889469403" line="82" linkage_kind="external" range.end="[92:2]" range.start="[82:1]" size="16" spelling="Animal" type="Animal" usr="c:@S@Animal" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="34" def_id="101471049563" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102057761202" inheritance_kind="Protected" isRef="True" isVirtualBase="True" line="82" range.end="[82:45]" range.start="[82:16]" spelling="class LivingThing" type="LivingThing">
+               
+      
+               <TypeRef col="34" def_id="101471049563" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103734676526" isRef="True" line="82" range.end="[82:45]" range.start="[82:34]" spelling="class LivingThing" type="LivingThing"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Protected" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102364835960" isDecl="True" isDef="True" lex_parent_id="101502865278" line="83" range.end="[83:11]" range.start="[83:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Protected" col="9" display_name="breathCount" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101623684699" isDecl="True" isDef="True" lex_parent_id="101502865278" line="84" linkage_kind="external" offset="8" range.end="[84:20]" range.start="[84:5]" size="4" spelling="breathCount" type="int" usr="c:@S@Animal@FI@breathCount" visibility="default"/>
+            
+    
+            <CXXMethod access_specifier="Protected" col="10" display_name="breathe()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="100290926350" isDecl="True" isDef="True" lex_parent_id="101502865278" line="85" linkage_kind="external" linkage_name="_ZN6Animal7breatheEv" mangled_name="_ZN6Animal7breatheEv" range.end="[87:6]" range.start="[85:5]" return_type="void" spelling="breathe" storage_class="default_auto" type="void ()" usr="c:@S@Animal@F@breathe#" visibility="default">
+               
+      
+               <CompoundStmt col="20" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100482275952" line="85" range.end="[87:6]" range.start="[85:20]" sem_parent_id="100290926350" storage_class="default_auto">
+                  
+        
+                  <UnaryOperator col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101923956725" line="86" range.end="[86:28]" range.start="[86:9]" type="int">
+                     
+          
+                     <MemberRefExpr col="15" def_id="101623684699" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103314140742" line="86" range.end="[86:26]" range.start="[86:9]" spelling="breathCount" type="int">
+                        
+            
+                        <CXXThisExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102123502055" line="86" range.end="[86:13]" range.start="[86:9]" type="Animal *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+        
+                  </UnaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102563143754" isDecl="True" isDef="True" lex_parent_id="101502865278" line="88" range.end="[88:8]" range.start="[88:1]" usr="c:"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="3" display_name="Animal()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="100787762411" isDecl="True" isDef="True" lex_parent_id="101502865278" line="89" linkage_kind="external" linkage_name="_ZN6AnimalC1Ev" mangled_name="_ZN6AnimalC4Ev" range.end="[91:4]" range.start="[89:3]" return_type="void" spelling="Animal" storage_class="default_auto" type="void ()" usr="c:@S@Animal@F@Animal#" visibility="default">
+               
+      
+               <CompoundStmt col="11" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100051873445" line="89" range.end="[91:4]" range.start="[89:11]" sem_parent_id="100787762411" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101081270749" isAssignment="True" line="90" range.end="[90:26]" range.start="[90:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="101623684699" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103069719714" line="90" range.end="[90:22]" range.start="[90:5]" spelling="breathCount" type="int">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102076101983" line="90" range.end="[90:9]" range.start="[90:5]" type="Animal *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <IntegerLiteral col="25" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102703936356" line="90" range.end="[90:26]" range.start="[90:25]" type="int"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXConstructor>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="Reptile" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103010268972" isDecl="True" isDef="True" lex_parent_id="101889469403" line="94" linkage_kind="external" range.end="[105:2]" range.start="[94:1]" size="16" spelling="Reptile" type="Reptile" usr="c:@S@Reptile" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="32" def_id="101471049563" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103286760611" inheritance_kind="Public" isRef="True" isVirtualBase="True" line="94" range.end="[94:43]" range.start="[94:17]" spelling="class LivingThing" type="LivingThing">
+               
+      
+               <TypeRef col="32" def_id="101471049563" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103734676526" isRef="True" line="94" range.end="[94:43]" range.start="[94:32]" spelling="class LivingThing" type="LivingThing"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102581639861" isDecl="True" isDef="True" lex_parent_id="103010268972" line="95" range.end="[95:8]" range.start="[95:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="8" display_name="isCrawling" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100268800750" isDecl="True" isDef="True" lex_parent_id="103010268972" line="96" linkage_kind="external" offset="8" range.end="[96:18]" range.start="[96:3]" size="1" spelling="isCrawling" type="bool" usr="c:@S@Reptile@FI@isCrawling" visibility="default"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="3" display_name="Reptile()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="100535905044" isDecl="True" isDef="True" lex_parent_id="103010268972" line="98" linkage_kind="external" linkage_name="_ZN7ReptileC1Ev" mangled_name="_ZN7ReptileC4Ev" range.end="[100:4]" range.start="[98:3]" return_type="void" spelling="Reptile" storage_class="default_auto" type="void ()" usr="c:@S@Reptile@F@Reptile#" visibility="default">
+               
+      
+               <CompoundStmt col="12" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103807779238" line="98" range.end="[100:4]" range.start="[98:12]" sem_parent_id="100535905044" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100708638637" isAssignment="True" line="99" range.end="[99:28]" range.start="[99:5]" type="bool">
+                     
+          
+                     <MemberRefExpr col="11" def_id="100268800750" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102013756828" line="99" range.end="[99:21]" range.start="[99:5]" spelling="isCrawling" type="bool">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102599526927" line="99" range.end="[99:9]" range.start="[99:5]" type="Reptile *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="24" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103013785556" line="99" range.end="[99:28]" range.start="[99:24]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXConstructor>
+            
+    
+            <CXXAccessSpecifier access_specifier="Protected" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102910920485" isDecl="True" isDef="True" lex_parent_id="103010268972" line="101" range.end="[101:11]" range.start="[101:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Protected" col="10" display_name="crawl()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="100321819153" isDecl="True" isDef="True" lex_parent_id="103010268972" line="102" linkage_kind="external" linkage_name="_ZN7Reptile5crawlEv" mangled_name="_ZN7Reptile5crawlEv" range.end="[104:6]" range.start="[102:5]" return_type="void" spelling="crawl" storage_class="default_auto" type="void ()" usr="c:@S@Reptile@F@crawl#" visibility="default">
+               
+      
+               <CompoundStmt col="18" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101783118831" line="102" range.end="[104:6]" range.start="[102:18]" sem_parent_id="100321819153" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="7" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103148159305" isAssignment="True" line="103" range.end="[103:30]" range.start="[103:7]" type="bool">
+                     
+          
+                     <MemberRefExpr col="13" def_id="100268800750" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="103202175841" line="103" range.end="[103:23]" range.start="[103:7]" spelling="isCrawling" type="bool">
+                        
+            
+                        <CXXThisExpr col="7" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100440670809" line="103" range.end="[103:11]" range.start="[103:7]" type="Reptile *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="26" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100037106227" line="103" range.end="[103:30]" range.start="[103:26]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="Snake" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102713208203" isDecl="True" isDef="True" lex_parent_id="101889469403" line="107" linkage_kind="external" range.end="[110:2]" range.start="[107:1]" spelling="Snake" type="Snake" usr="c:@S@Snake" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="25" def_id="101502865278" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104109251759" inheritance_kind="Protected" isRef="True" line="107" range.end="[107:31]" range.start="[107:15]" spelling="class Animal" storage_class="static" type="Animal">
+               
+      
+               <TypeRef col="25" def_id="101502865278" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101685526768" isRef="True" line="107" range.end="[107:31]" range.start="[107:25]" spelling="class Animal" type="Animal"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXBaseClassSpecifier col="33" def_id="103010268972" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100311908333" inheritance_kind="Private" isRef="True" line="107" range.end="[107:40]" range.start="[107:33]" spelling="class Reptile" type="Reptile">
+               
+      
+               <TypeRef col="33" def_id="103010268972" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="102732841816" isRef="True" line="107" range.end="[107:40]" range.start="[107:33]" spelling="class Reptile" type="Reptile"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXBaseClassSpecifier col="42" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="100634455603" inheritance_kind="Private" isRef="True" line="107" range.end="[107:53]" range.start="[107:42]" spelling="class ParentClass" type="ParentClass">
+               
+      
+               <TypeRef col="42" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="101821689001" isRef="True" line="107" range.end="[107:53]" range.start="[107:42]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="104206753356" isDecl="True" isDef="True" lex_parent_id="102713208203" line="108" range.end="[108:8]" range.start="[108:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" def_id="203539464615" display_name="crawl()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="100315326812" isDecl="True" lex_parent_id="102713208203" line="109" linkage_kind="external" linkage_name="_ZN5Snake5crawlEv" mangled_name="_ZN5Snake5crawlEv" range.end="[109:15]" range.start="[109:3]" return_type="void" spelling="crawl" storage_class="default_auto" type="void ()" usr="c:@S@Snake@F@crawl#" visibility="default"/>
+            
+  
+         </ClassDecl>
+         
+  
+         <VarDecl access_specifier="Private" col="18" display_name="a" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102672429341" isDecl="True" isDef="True" lex_parent_id="101889469403" line="4" linkage_kind="external" range.end="[4:25]" range.start="[4:1]" sem_parent_id="103889420436" spelling="a" storage_class="default_auto" type="int" usr="c:@S@ParentClass@a" visibility="default">
+            
+    
+            <TypeRef col="5" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101821689001" isRef="True" line="4" range.end="[4:16]" range.start="[4:5]" spelling="class ParentClass" type="ParentClass"/>
+            
+    
+            <IntegerLiteral col="22" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102280236968" line="4" range.end="[4:25]" range.start="[4:22]" sem_parent_id="102672429341" storage_class="default_auto" type="int"/>
+            
+  
+         </VarDecl>
+         
+  
+         <VarDecl access_specifier="Public" col="24" display_name="b" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103458961946" isDecl="True" isDef="True" lex_parent_id="101889469403" line="5" linkage_kind="external" range.end="[5:31]" range.start="[5:1]" sem_parent_id="103889420436" spelling="b" storage_class="default_auto" type="const int" usr="c:@S@ParentClass@b" visibility="default">
+            
+    
+            <TypeRef col="11" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101821689001" isRef="True" line="5" range.end="[5:22]" range.start="[5:11]" spelling="class ParentClass" type="ParentClass"/>
+            
+    
+            <IntegerLiteral col="28" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103730172030" line="5" range.end="[5:31]" range.start="[5:28]" sem_parent_id="103458961946" storage_class="default_auto" type="int"/>
+            
+  
+         </VarDecl>
+         
+  
+         <FunctionDecl col="5" display_name="main()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" funcargs="" id="100252185384" isDecl="True" isDef="True" lex_parent_id="101889469403" line="8" linkage_kind="external" linkage_name="main" range.end="[26:2]" range.start="[8:1]" return_type="int" spelling="main" storage_class="default_auto" type="int ()" usr="c:@F@main#" visibility="default">
+            
+    
+            <CompoundStmt col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100249198762" line="9" range.end="[26:2]" range.start="[9:1]" sem_parent_id="100252185384" storage_class="default_auto">
+               
+      
+               <DeclStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100246868673" line="10" range.end="[10:22]" range.start="[10:5]">
+                  
+        
+                  <VarDecl col="20" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102523085435" isDecl="True" isDef="True" lex_parent_id="100252185384" line="10" linkage_kind="auto" offset="0x24" range.end="[10:21]" range.start="[10:5]" size="12" spelling="x" storage_class="default_auto" type="struct foo_str" usr="c:inherit.cpp@188@F@main#@x" visibility="default">
+                     
+          
+                     <TypeRef col="12" def_id="100440782241" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100782280163" isRef="True" line="10" range.end="[10:19]" range.start="[10:12]" spelling="struct foo_str" type="foo_str"/>
+                     
+          
+                     <CallExpr col="20" def_id="102868774577" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103496578734" line="10" range.end="[10:21]" range.start="[10:20]" sem_parent_id="102523085435" spelling="foo_str" storage_class="default_auto" type="struct foo_str"/>
+                     
+        
+                  </VarDecl>
+                  
+      
+               </DeclStmt>
+               
+      
+               <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103662356438" isAssignment="True" line="11" range.end="[11:12]" range.start="[11:5]" type="int">
+                  
+        
+                  <MemberRefExpr col="7" def_id="102160770096" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103272997431" line="11" range.end="[11:8]" range.start="[11:5]" spelling="x" type="int">
+                     
+          
+                     <DeclRefExpr col="5" def_id="102523085435" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102403237054" line="11" range.end="[11:6]" range.start="[11:5]" spelling="x" type="struct foo_str"/>
+                     
+        
+                  </MemberRefExpr>
+                  
+        
+                  <IntegerLiteral col="11" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102518633950" line="11" range.end="[11:12]" range.start="[11:11]" type="int"/>
+                  
+      
+               </BinaryOperator>
+               
+      
+               <DeclStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102502277352" line="12" range.end="[12:22]" range.start="[12:5]">
+                  
+        
+                  <VarDecl col="20" display_name="y" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101158910217" isDecl="True" isDef="True" lex_parent_id="100252185384" line="12" linkage_kind="auto" offset="0x30" range.end="[12:21]" range.start="[12:5]" size="12" spelling="y" storage_class="default_auto" type="struct foo_str" usr="c:inherit.cpp@223@F@main#@y" visibility="default">
+                     
+          
+                     <TypeRef col="12" def_id="100440782241" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100782280163" isRef="True" line="12" range.end="[12:19]" range.start="[12:12]" spelling="struct foo_str" type="foo_str"/>
+                     
+          
+                     <CallExpr col="20" def_id="102868774577" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103129148019" line="12" range.end="[12:21]" range.start="[12:20]" sem_parent_id="101158910217" spelling="foo_str" storage_class="default_auto" type="struct foo_str"/>
+                     
+        
+                  </VarDecl>
+                  
+      
+               </DeclStmt>
+               
+      
+               <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103569876550" line="13" range.end="[13:15]" range.start="[13:5]" type="foo_str">
+                  
+        
+                  <CallExpr col="5" def_id="100093055462" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101773946396" line="13" range.end="[13:15]" range.start="[13:5]" spelling="operator=" type="foo_str">
+                     
+          
+                     <DeclRefExpr col="5" def_id="101158910217" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="104027030925" line="13" range.end="[13:6]" range.start="[13:5]" spelling="y" type="struct foo_str"/>
+                     
+          
+                     <UnexposedExpr col="7" def_id="100093055462" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100285011920" line="13" range.end="[13:8]" range.start="[13:7]" spelling="operator=" type="foo_str &amp;(*)(foo_str &amp;&amp;) noexcept">
+                        
+            
+                        <DeclRefExpr col="7" def_id="100093055462" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103060245603" line="13" range.end="[13:8]" range.start="[13:7]" spelling="operator=" type="foo_str &amp;(foo_str &amp;&amp;) noexcept"/>
+                        
+          
+                     </UnexposedExpr>
+                     
+          
+                     <UnexposedExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101436670453" line="13" range.end="[13:15]" range.start="[13:9]" type="struct foo_str">
+                        
+            
+                        <CallExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100397241521" line="13" range.end="[13:15]" range.start="[13:9]" ref_id="102344384494" spelling="foo" type="struct foo_str">
+                           
+              
+                           <UnexposedExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100653857969" line="13" range.end="[13:12]" range.start="[13:9]" ref_id="102344384494" spelling="foo" type="struct foo_str (*)(struct foo_str)">
+                              
+                
+                              <DeclRefExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102946314918" line="13" range.end="[13:12]" range.start="[13:9]" ref_id="102344384494" spelling="foo" type="struct foo_str (struct foo_str)"/>
+                              
+              
+                           </UnexposedExpr>
+                           
+              
+                           <CallExpr col="13" def_id="100524783549" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103711147747" line="13" range.end="[13:14]" range.start="[13:13]" spelling="foo_str" type="struct foo_str">
+                              
+                
+                              <UnexposedExpr col="13" def_id="102523085435" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102539265590" line="13" range.end="[13:14]" range.start="[13:13]" spelling="x" type="const struct foo_str">
+                                 
+                  
+                                 <DeclRefExpr col="13" def_id="102523085435" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103528759727" line="13" range.end="[13:14]" range.start="[13:13]" spelling="x" type="struct foo_str"/>
+                                 
+                
+                              </UnexposedExpr>
+                              
+              
+                           </CallExpr>
+                           
+            
+                        </CallExpr>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </CallExpr>
+                  
+      
+               </UnexposedExpr>
+               
+      
+               <DeclStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101568209192" line="15" range.end="[15:17]" range.start="[15:5]">
+                  
+        
+                  <VarDecl col="11" display_name="snake" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102401806095" isDecl="True" isDef="True" lex_parent_id="100252185384" line="15" linkage_kind="auto" offset="0x70" range.end="[15:16]" range.start="[15:5]" size="64" spelling="snake" storage_class="default_auto" type="Snake" usr="c:inherit.cpp@291@F@main#@snake" visibility="default">
+                     
+          
+                     <TypeRef col="5" def_id="102713208203" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101296836773" isRef="True" line="15" range.end="[15:10]" range.start="[15:5]" spelling="class Snake" type="Snake"/>
+                     
+          
+                     <CallExpr col="11" def_id="103803331192" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102792300670" line="15" range.end="[15:16]" range.start="[15:11]" sem_parent_id="102401806095" spelling="Snake" storage_class="default_auto" type="Snake"/>
+                     
+        
+                  </VarDecl>
+                  
+      
+               </DeclStmt>
+               
+      
+               <CallExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101806834971" line="16" range.end="[16:18]" range.start="[16:5]" ref_id="100315326812" spelling="crawl" type="void">
+                  
+        
+                  <MemberRefExpr col="11" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101240172093" line="16" range.end="[16:16]" range.start="[16:5]" ref_id="100315326812" spelling="crawl" type="&lt;bound member function type&gt;">
+                     
+          
+                     <DeclRefExpr col="5" def_id="102401806095" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102200991364" line="16" range.end="[16:10]" range.start="[16:5]" spelling="snake" type="Snake"/>
+                     
+        
+                  </MemberRefExpr>
+                  
+      
+               </CallExpr>
+               
+      
+               <DeclStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100784233027" line="19" range.end="[19:42]" range.start="[19:5]">
+                  
+        
+                  <VarDecl col="18" display_name="p" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102181528314" isDecl="True" isDef="True" lex_parent_id="100252185384" line="19" linkage_kind="auto" offset="0x18" range.end="[19:41]" range.start="[19:5]" size="8" spelling="p" storage_class="default_auto" type="ParentClass *" usr="c:inherit.cpp@359@F@main#@p" visibility="default">
+                     
+          
+                     <TypeRef col="5" def_id="103889420436" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101821689001" isRef="True" line="19" range.end="[19:16]" range.start="[19:5]" spelling="class ParentClass" type="ParentClass"/>
+                     
+          
+                     <UnexposedExpr col="22" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103801897574" line="19" range.end="[19:41]" range.start="[19:22]" sem_parent_id="102181528314" storage_class="default_auto" type="ParentClass *">
+                        
+            
+                        <CXXNewExpr col="22" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102852919732" line="19" range.end="[19:41]" range.start="[19:22]" type="DerivedClass1 *">
+                           
+              
+                           <TypeRef col="26" def_id="101807164044" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101760170693" isRef="True" line="19" range.end="[19:39]" range.start="[19:26]" spelling="class DerivedClass1" type="DerivedClass1"/>
+                           
+              
+                           <CallExpr col="26" def_id="101410785021" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102957129015" line="19" range.end="[19:41]" range.start="[19:26]" spelling="DerivedClass1" type="DerivedClass1"/>
+                           
+            
+                        </CXXNewExpr>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </VarDecl>
+                  
+      
+               </DeclStmt>
+               
+      
+               <CallExpr col="5" def_id="102446479921" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100547770978" line="20" range.end="[20:15]" range.start="[20:5]" spelling="hello" type="void">
+                  
+        
+                  <MemberRefExpr col="8" def_id="102446479921" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100330751301" line="20" range.end="[20:13]" range.start="[20:5]" spelling="hello" type="&lt;bound member function type&gt;">
+                     
+          
+                     <UnexposedExpr col="5" def_id="102181528314" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101559871291" line="20" range.end="[20:6]" range.start="[20:5]" spelling="p" type="ParentClass *">
+                        
+            
+                        <DeclRefExpr col="5" def_id="102181528314" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103651635864" line="20" range.end="[20:6]" range.start="[20:5]" spelling="p" type="ParentClass *"/>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </MemberRefExpr>
+                  
+      
+               </CallExpr>
+               
+      
+               <DeclStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102568326986" line="21" range.end="[21:21]" range.start="[21:5]">
+                  
+        
+                  <VarDecl col="19" display_name="d" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="104292874567" isDecl="True" isDef="True" lex_parent_id="100252185384" line="21" linkage_kind="auto" offset="0x90" range.end="[21:20]" range.start="[21:5]" size="32" spelling="d" storage_class="default_auto" type="DerivedClass1" usr="c:inherit.cpp@448@F@main#@d" visibility="default">
+                     
+          
+                     <TypeRef col="5" def_id="101807164044" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101760170693" isRef="True" line="21" range.end="[21:18]" range.start="[21:5]" spelling="class DerivedClass1" type="DerivedClass1"/>
+                     
+          
+                     <CallExpr col="19" def_id="101410785021" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101742179016" line="21" range.end="[21:20]" range.start="[21:19]" sem_parent_id="104292874567" spelling="DerivedClass1" storage_class="default_auto" type="DerivedClass1"/>
+                     
+        
+                  </VarDecl>
+                  
+      
+               </DeclStmt>
+               
+      
+               <CallExpr col="5" def_id="101783148214" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102811254474" line="22" range.end="[22:15]" range.start="[22:5]" spelling="hello" type="void">
+                  
+        
+                  <MemberRefExpr col="7" def_id="101783148214" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="104017183658" line="22" range.end="[22:12]" range.start="[22:5]" spelling="hello" type="&lt;bound member function type&gt;">
+                     
+          
+                     <DeclRefExpr col="5" def_id="104292874567" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100374274359" line="22" range.end="[22:6]" range.start="[22:5]" spelling="d" type="DerivedClass1"/>
+                     
+        
+                  </MemberRefExpr>
+                  
+        
+                  <IntegerLiteral col="13" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100515737265" line="22" range.end="[22:14]" range.start="[22:13]" type="int"/>
+                  
+      
+               </CallExpr>
+               
+      
+               <CallExpr col="5" def_id="104006417771" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101149963660" line="23" range.end="[23:17]" range.start="[23:5]" spelling="hello" type="void">
+                  
+        
+                  <MemberRefExpr col="7" def_id="104006417771" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="102594416041" line="23" range.end="[23:12]" range.start="[23:5]" spelling="hello" type="&lt;bound member function type&gt;">
+                     
+          
+                     <DeclRefExpr col="5" def_id="104292874567" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="100769503678" line="23" range.end="[23:6]" range.start="[23:5]" spelling="d" type="DerivedClass1"/>
+                     
+        
+                  </MemberRefExpr>
+                  
+        
+                  <FloatingLiteral col="13" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="103398996475" line="23" range.end="[23:16]" range.start="[23:13]" type="double"/>
+                  
+      
+               </CallExpr>
+               
+      
+               <ReturnStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101868239056" line="25" range.end="[25:13]" range.start="[25:5]">
+                  
+        
+                  <IntegerLiteral col="12" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/src/inherit.cpp" id="101036067391" line="25" range.end="[25:13]" range.start="[25:12]" type="int"/>
+                  
+      
+               </ReturnStmt>
+               
+    
+            </CompoundStmt>
+            
+  
+         </FunctionDecl>
+         
+
+      </TranslationUnit>
+   </EXECUTABLE>
+   <DYNAMIC_LIBRARY binary="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/build/lib/libfoo.so">
+      <TranslationUnit>
+         
+  
+         <TemplateStubs>
+            
+    
+            <CXXConstructor access_specifier="Public" col="7" display_name="ParentClass()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="204066726951" isDecl="True" isDef="True" lex_parent_id="201654262830" line="16" linkage_kind="external" linkage_name="_ZN11ParentClassC1Ev" range.end="[16:18]" range.start="[16:7]" return_type="void" spelling="ParentClass" storage_class="default_auto" type="void () noexcept" usr="c:@S@ParentClass@F@ParentClass#" visibility="default"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="8" display_name="foo_str(foo_str &amp;&amp;)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="foo_str &amp;&amp;" id="201837162357" isDecl="True" isDef="True" lex_parent_id="201708876154" line="6" linkage_kind="external" linkage_name="_ZN7foo_strC1EOS_" range.end="[6:15]" range.start="[6:8]" return_type="void" spelling="foo_str" storage_class="default_auto" type="void (foo_str &amp;&amp;) noexcept" usr="c:@S@foo_str@F@foo_str#&amp;&amp;$@S@foo_str#" visibility="default"/>
+            
+  
+         </TemplateStubs>
+         
+  
+         <StructDecl col="8" display_name="foo_str" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201708876154" isDecl="True" isDef="True" lex_parent_id="202945296163" line="6" linkage_kind="external" range.end="[11:2]" range.start="[6:1]" size="12" spelling="foo_str" type="foo_str" usr="c:@S@foo_str" visibility="default">
+            
+    
+            <FieldDecl access_specifier="Public" col="7" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203149166802" isDecl="True" isDef="True" lex_parent_id="201708876154" line="7" linkage_kind="external" offset="0" range.end="[7:8]" range.start="[7:3]" size="4" spelling="x" type="int" usr="c:@S@foo_str@FI@x" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="7" display_name="y" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200614767157" isDecl="True" isDef="True" lex_parent_id="201708876154" line="8" linkage_kind="external" offset="4" range.end="[8:8]" range.start="[8:3]" size="4" spelling="y" type="int" usr="c:@S@foo_str@FI@y" visibility="default"/>
+            
+    
+            <CXXAccessSpecifier access_specifier="Private" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201581506815" isDecl="True" isDef="True" lex_parent_id="201708876154" line="9" range.end="[9:9]" range.start="[9:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Private" col="7" display_name="z" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201522697889" isDecl="True" isDef="True" lex_parent_id="201708876154" line="10" linkage_kind="external" offset="8" range.end="[10:8]" range.start="[10:3]" size="4" spelling="z" type="int" usr="c:@S@foo_str@FI@z" visibility="default"/>
+            
+  
+         </StructDecl>
+         
+  
+         <FunctionDecl col="16" def_id="202883818811" display_name="foo(struct foo_str)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="struct foo_str" id="202666531013" isDecl="True" lex_parent_id="202945296163" line="13" linkage_kind="external" linkage_name="_Z3foo7foo_str" range.end="[13:37]" range.start="[13:1]" return_type="struct foo_str" spelling="foo" storage_class="default_auto" type="struct foo_str (struct foo_str)" usr="c:@F@foo#$@S@foo_str#" visibility="default">
+            
+    
+            <TypeRef col="8" def_id="201708876154" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203920628029" isRef="True" line="13" range.end="[13:15]" range.start="[13:8]" spelling="struct foo_str" type="foo_str"/>
+            
+    
+            <ParmDecl col="35" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200776192560" isDecl="True" isDef="True" lex_parent_id="202666531013" line="13" linkage_kind="auto" range.end="[13:36]" range.start="[13:20]" spelling="x" storage_class="default_auto" type="struct foo_str" usr="c:foo.h@143@F@foo#$@S@foo_str#@x" visibility="default">
+               
+      
+               <TypeRef col="27" def_id="201708876154" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203920628029" isRef="True" line="13" range.end="[13:34]" range.start="[13:27]" spelling="struct foo_str" type="foo_str"/>
+               
+    
+            </ParmDecl>
+            
+  
+         </FunctionDecl>
+         
+  
+         <ClassDecl col="7" display_name="ParentClass" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201654262830" isDecl="True" isDef="True" lex_parent_id="202945296163" line="16" linkage_kind="external" range.end="[33:2]" range.start="[16:1]" spelling="ParentClass" type="ParentClass" usr="c:@S@ParentClass" visibility="default">
+            
+    
+            <FieldDecl access_specifier="Private" col="7" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203096629253" isDecl="True" isDef="True" lex_parent_id="201654262830" line="17" linkage_kind="external" offset="8" range.end="[17:8]" range.start="[17:3]" size="4" spelling="x" type="int" usr="c:@S@ParentClass@FI@x" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Private" col="10" display_name="y" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202885232429" isDecl="True" isDef="True" lex_parent_id="201654262830" line="17" linkage_kind="external" offset="12" range.end="[17:11]" range.start="[17:3]" size="4" spelling="y" type="int" usr="c:@S@ParentClass@FI@y" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Private" col="13" display_name="z" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201704804638" isDecl="True" isDef="True" lex_parent_id="201654262830" line="17" linkage_kind="external" offset="16" range.end="[17:14]" range.start="[17:3]" size="4" spelling="z" type="int" usr="c:@S@ParentClass@FI@z" visibility="default"/>
+            
+    
+            <VarDecl access_specifier="Private" col="14" def_id="102672429341" display_name="a" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201354489155" isDecl="True" lex_parent_id="201654262830" line="18" linkage_kind="external" range.end="[18:15]" range.start="[18:3]" size="4" spelling="a" storage_class="static" type="int" usr="c:@S@ParentClass@a" visibility="default"/>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202879390695" isDecl="True" isDef="True" lex_parent_id="201654262830" line="19" range.end="[19:8]" range.start="[19:1]" usr="c:"/>
+            
+    
+            <VarDecl access_specifier="Public" col="20" def_id="103458961946" display_name="b" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200810216227" isDecl="True" lex_parent_id="201654262830" line="20" linkage_kind="external" range.end="[20:21]" range.start="[20:3]" size="4" spelling="b" storage_class="static" type="const int" usr="c:@S@ParentClass@b" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="7" display_name="c" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202489293523" isDecl="True" isDef="True" lex_parent_id="201654262830" line="21" linkage_kind="external" offset="20" range.end="[21:8]" range.start="[21:3]" size="4" spelling="c" type="int" usr="c:@S@ParentClass@FI@c" visibility="default"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="9" display_name="d" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200405354880" isDecl="True" isDef="True" lex_parent_id="201654262830" line="22" linkage_kind="external" offset="24" range.end="[22:10]" range.start="[22:3]" size="4" spelling="d" type="float" usr="c:@S@ParentClass@FI@d" visibility="default"/>
+            
+    
+            <EnumDecl access_specifier="Public" col="8" display_name="days" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201823125702" isDecl="True" isDef="True" lex_parent_id="201654262830" line="23" linkage_kind="external" range.end="[23:49]" range.start="[23:3]" spelling="days" type="ParentClass::days" usr="c:@S@ParentClass@E@days" visibility="default">
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="13" display_name="sun" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202254578207" isDecl="True" isDef="True" lex_parent_id="201823125702" line="23" linkage_kind="external" range.end="[23:16]" range.start="[23:13]" spelling="sun" type="ParentClass::days" usr="c:@S@ParentClass@E@days@sun" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="18" display_name="mon" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201386170358" isDecl="True" isDef="True" lex_parent_id="201823125702" line="23" linkage_kind="external" range.end="[23:21]" range.start="[23:18]" spelling="mon" type="ParentClass::days" usr="c:@S@ParentClass@E@days@mon" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="23" display_name="tue" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203673573706" isDecl="True" isDef="True" lex_parent_id="201823125702" line="23" linkage_kind="external" range.end="[23:26]" range.start="[23:23]" spelling="tue" type="ParentClass::days" usr="c:@S@ParentClass@E@days@tue" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="28" display_name="wed" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201993100297" isDecl="True" isDef="True" lex_parent_id="201823125702" line="23" linkage_kind="external" range.end="[23:31]" range.start="[23:28]" spelling="wed" type="ParentClass::days" usr="c:@S@ParentClass@E@days@wed" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="33" display_name="thrus" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201277736766" isDecl="True" isDef="True" lex_parent_id="201823125702" line="23" linkage_kind="external" range.end="[23:38]" range.start="[23:33]" spelling="thrus" type="ParentClass::days" usr="c:@S@ParentClass@E@days@thrus" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="40" display_name="fri" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200713458525" isDecl="True" isDef="True" lex_parent_id="201823125702" line="23" linkage_kind="external" range.end="[23:43]" range.start="[23:40]" spelling="fri" type="ParentClass::days" usr="c:@S@ParentClass@E@days@fri" visibility="default"/>
+               
+      
+               <EnumConstantDecl access_specifier="Public" col="45" display_name="sat" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203088067266" isDecl="True" isDef="True" lex_parent_id="201823125702" line="23" linkage_kind="external" range.end="[23:48]" range.start="[23:45]" spelling="sat" type="ParentClass::days" usr="c:@S@ParentClass@E@days@sat" visibility="default"/>
+               
+    
+            </EnumDecl>
+            
+    
+            <UnionDecl access_specifier="Public" col="9" display_name="month" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201838469896" isDecl="True" isDef="True" lex_parent_id="201654262830" line="24" linkage_kind="external" range.end="[27:4]" range.start="[24:3]" spelling="month" type="ParentClass::month" usr="c:@S@ParentClass@U@month" visibility="default">
+               
+      
+               <FieldDecl access_specifier="Public" col="9" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200242763299" isDecl="True" isDef="True" lex_parent_id="201838469896" line="25" linkage_kind="external" range.end="[25:10]" range.start="[25:5]" spelling="x" type="int" usr="c:@S@ParentClass@U@month@FI@x" visibility="default"/>
+               
+      
+               <FieldDecl access_specifier="Public" col="11" display_name="f" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203519282050" isDecl="True" isDef="True" lex_parent_id="201838469896" line="26" linkage_kind="external" range.end="[26:12]" range.start="[26:5]" spelling="f" type="float" usr="c:@S@ParentClass@U@month@FI@f" visibility="default"/>
+               
+    
+            </UnionDecl>
+            
+    
+            <CXXMethod access_specifier="Public" col="16" display_name="hello()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="202435584453" isCXXVirtual="True" isDecl="True" isDef="True" lex_parent_id="201654262830" line="28" linkage_kind="external" linkage_name="_ZN11ParentClass5helloEv" mangled_name="_ZN11ParentClass5helloEv" range.end="[30:4]" range.start="[28:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void ()" usr="c:@S@ParentClass@F@hello#" visibility="default">
+               
+      
+               <CompoundStmt col="23" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202974437708" line="28" range.end="[30:4]" range.start="[28:23]" sem_parent_id="202435584453" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202172292329" isAssignment="True" line="29" range.end="[29:33]" range.start="[29:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="203096629253" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201703530092" line="29" range.end="[29:12]" range.start="[29:5]" spelling="x" type="int">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201938599463" line="29" range.end="[29:9]" range.start="[29:5]" type="ParentClass *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <BinaryOperator col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203495885220" line="29" range.end="[29:33]" range.start="[29:15]" type="int">
+                        
+            
+                        <UnexposedExpr col="15" def_id="202885232429" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200584800373" line="29" range.end="[29:16]" range.start="[29:15]" spelling="y" type="int">
+                           
+              
+                           <MemberRefExpr col="15" def_id="202885232429" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203436069200" line="29" range.end="[29:16]" range.start="[29:15]" spelling="y" type="int"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+            
+                        <UnexposedExpr col="32" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200997950703" line="29" range.end="[29:33]" range.start="[29:19]" ref_id="201354489155" spelling="a" type="int">
+                           
+              
+                           <DeclRefExpr col="32" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202650696199" line="29" range.end="[29:33]" range.start="[29:19]" ref_id="201354489155" spelling="a" type="int">
+                              
+                
+                              <TypeRef col="19" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202387252783" isRef="True" line="29" range.end="[29:30]" range.start="[29:19]" spelling="class ParentClass" type="ParentClass"/>
+                              
+              
+                           </DeclRefExpr>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </BinaryOperator>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <FriendDecl access_specifier="Public" col="10" def_id="101703203645" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201297755295" isDecl="True" lex_parent_id="201654262830" line="31" range.end="[31:28]" range.start="[31:3]" usr="c:">
+               
+      
+               <TypeRef col="16" def_id="202368561742" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201065631670" isRef="True" line="31" range.end="[31:28]" range.start="[31:16]" spelling="class ParentClass1" type="ParentClass1"/>
+               
+    
+            </FriendDecl>
+            
+    
+            <FriendDecl access_specifier="Public" col="15" def_id="101703203645" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201313875159" isDecl="True" lex_parent_id="201654262830" line="32" range.end="[32:40]" range.start="[32:3]" usr="c:">
+               
+      
+               <FunctionDecl access_specifier="Public" col="15" def_id="202651437238" display_name="accessFriendClassGlobal()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="201895681871" isDecl="True" lex_parent_id="201654262830" line="32" linkage_kind="external" linkage_name="_Z23accessFriendClassGlobalv" range.end="[32:40]" range.start="[32:3]" return_type="void" sem_parent_id="202945296163" spelling="accessFriendClassGlobal" storage_class="default_auto" type="void ()" usr="c:@F@accessFriendClassGlobal#" visibility="default"/>
+               
+    
+            </FriendDecl>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="DerivedClass1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202837959979" isDecl="True" isDef="True" lex_parent_id="202945296163" line="36" linkage_kind="external" range.end="[50:2]" range.start="[36:1]" spelling="DerivedClass1" type="DerivedClass1" usr="c:@S@DerivedClass1" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="29" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202918916043" inheritance_kind="Public" isRef="True" line="36" range.end="[36:40]" range.start="[36:22]" spelling="class ParentClass" type="ParentClass">
+               
+      
+               <TypeRef col="29" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202387252783" isRef="True" line="36" range.end="[36:40]" range.start="[36:29]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="204244637258" isDecl="True" isDef="True" lex_parent_id="202837959979" line="37" range.end="[37:8]" range.start="[37:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="hello()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="202080837042" isCXXVirtual="True" isDecl="True" isDef="True" lex_parent_id="202837959979" line="38" linkage_kind="external" linkage_name="_ZN13DerivedClass15helloEv" mangled_name="_ZN13DerivedClass15helloEv" range.end="[41:4]" range.start="[38:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void ()" usr="c:@S@DerivedClass1@F@hello#" visibility="default">
+               
+      
+               <CompoundStmt col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201417415344" line="38" range.end="[41:4]" range.start="[38:15]" sem_parent_id="202080837042" storage_class="default_auto">
+                  
+        
+                  <CompoundAssignOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203886132281" isAssignment="True" line="39" range.end="[39:30]" range.start="[39:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="202489293523" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200377907408" line="39" range.end="[39:12]" range.start="[39:5]" spelling="c" type="int">
+                        
+            
+                        <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200332218052" line="39" range.end="[39:9]" range.start="[39:5]" type="ParentClass *">
+                           
+              
+                           <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200234360554" line="39" range.end="[39:9]" range.start="[39:5]" type="DerivedClass1 *"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <UnexposedExpr col="29" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200286634189" line="39" range.end="[39:30]" range.start="[39:16]" ref_id="200810216227" spelling="b" type="int">
+                        
+            
+                        <DeclRefExpr col="29" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203536898557" line="39" range.end="[39:30]" range.start="[39:16]" ref_id="200810216227" spelling="b" type="const int">
+                           
+              
+                           <TypeRef col="16" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202387252783" isRef="True" line="39" range.end="[39:27]" range.start="[39:16]" spelling="class ParentClass" type="ParentClass"/>
+                           
+            
+                        </DeclRefExpr>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </CompoundAssignOperator>
+                  
+        
+                  <UnaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202537350809" line="40" range.end="[40:16]" range.start="[40:5]" type="int">
+                     
+          
+                     <ParenExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203977982878" line="40" range.end="[40:14]" range.start="[40:5]" type="int">
+                        
+            
+                        <MemberRefExpr col="12" def_id="202489293523" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203489580462" line="40" range.end="[40:13]" range.start="[40:6]" spelling="c" type="int">
+                           
+              
+                           <UnexposedExpr col="6" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202185254984" line="40" range.end="[40:10]" range.start="[40:6]" type="ParentClass *">
+                              
+                
+                              <CXXThisExpr col="6" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200466106944" line="40" range.end="[40:10]" range.start="[40:6]" type="DerivedClass1 *"/>
+                              
+              
+                           </UnexposedExpr>
+                           
+            
+                        </MemberRefExpr>
+                        
+          
+                     </ParenExpr>
+                     
+        
+                  </UnaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="hello(int)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="int" id="200587941848" isDecl="True" isDef="True" lex_parent_id="202837959979" line="43" linkage_kind="external" linkage_name="_ZN13DerivedClass15helloEi" mangled_name="_ZN13DerivedClass15helloEi" range.end="[45:4]" range.start="[43:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void (int)" usr="c:@S@DerivedClass1@F@hello#I#" visibility="default">
+               
+      
+               <ParmDecl col="18" display_name="i" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202499524903" isDecl="True" isDef="True" lex_parent_id="200587941848" line="43" linkage_kind="auto" range.end="[43:19]" range.start="[43:14]" size="4" spelling="i" storage_class="default_auto" type="int" usr="c:foo.h@718@S@DerivedClass1@F@hello#I#@i" visibility="default"/>
+               
+      
+               <CompoundStmt col="20" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203340570815" line="43" range.end="[45:4]" range.start="[43:20]" sem_parent_id="200587941848" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202669093990" isAssignment="True" line="44" range.end="[44:20]" range.start="[44:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="202489293523" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200276089104" line="44" range.end="[44:12]" range.start="[44:5]" spelling="c" type="int">
+                        
+            
+                        <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202954910194" line="44" range.end="[44:9]" range.start="[44:5]" type="ParentClass *">
+                           
+              
+                           <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202328372940" line="44" range.end="[44:9]" range.start="[44:5]" type="DerivedClass1 *"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <UnexposedExpr col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203910999277" line="44" range.end="[44:20]" range.start="[44:15]" type="int">
+                        
+            
+                        <BinaryOperator col="15" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201831621561" isAssignment="True" line="44" range.end="[44:20]" range.start="[44:15]" type="int">
+                           
+              
+                           <DeclRefExpr col="15" def_id="202499524903" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201357579996" line="44" range.end="[44:16]" range.start="[44:15]" spelling="i" type="int"/>
+                           
+              
+                           <IntegerLiteral col="19" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="204176010131" line="44" range.end="[44:20]" range.start="[44:19]" type="int"/>
+                           
+            
+                        </BinaryOperator>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="hello(double)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="double" id="201779790909" isDecl="True" isDef="True" lex_parent_id="202837959979" line="47" linkage_kind="external" linkage_name="_ZN13DerivedClass15helloEd" mangled_name="_ZN13DerivedClass15helloEd" range.end="[49:4]" range.start="[47:3]" return_type="void" spelling="hello" storage_class="default_auto" type="void (double)" usr="c:@S@DerivedClass1@F@hello#d#" visibility="default">
+               
+      
+               <ParmDecl col="21" display_name="z" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202328318279" isDecl="True" isDef="True" lex_parent_id="201779790909" line="47" linkage_kind="auto" range.end="[47:22]" range.start="[47:14]" size="8" spelling="z" storage_class="default_auto" type="double" usr="c:foo.h@765@S@DerivedClass1@F@hello#d#@z" visibility="default"/>
+               
+      
+               <CompoundStmt col="23" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201516788191" line="47" range.end="[49:4]" range.start="[47:23]" sem_parent_id="201779790909" storage_class="default_auto">
+                  
+        
+                  <CompoundAssignOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202517872475" isAssignment="True" line="48" range.end="[48:17]" range.start="[48:5]" type="float">
+                     
+          
+                     <MemberRefExpr col="11" def_id="200405354880" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202318586912" line="48" range.end="[48:12]" range.start="[48:5]" spelling="d" type="float">
+                        
+            
+                        <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203455934414" line="48" range.end="[48:9]" range.start="[48:5]" type="ParentClass *">
+                           
+              
+                           <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202546697224" line="48" range.end="[48:9]" range.start="[48:5]" type="DerivedClass1 *"/>
+                           
+            
+                        </UnexposedExpr>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <UnexposedExpr col="16" def_id="202328318279" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201025545781" line="48" range.end="[48:17]" range.start="[48:16]" spelling="z" type="double">
+                        
+            
+                        <DeclRefExpr col="16" def_id="202328318279" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200244555589" line="48" range.end="[48:17]" range.start="[48:16]" spelling="z" type="double"/>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </CompoundAssignOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="ParentClass1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202368561742" isDecl="True" isDef="True" lex_parent_id="202945296163" line="53" linkage_kind="external" range.end="[59:2]" range.start="[53:1]" spelling="ParentClass1" type="ParentClass1" usr="c:@S@ParentClass1" visibility="default">
+            
+    
+            <FieldDecl access_specifier="Private" col="15" display_name="p" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200933084024" isDecl="True" isDef="True" lex_parent_id="202368561742" line="54" linkage_kind="external" range.end="[54:16]" range.start="[54:3]" spelling="p" type="ParentClass" usr="c:@S@ParentClass1@FI@p" visibility="default">
+               
+      
+               <TypeRef col="3" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202387252783" isRef="True" line="54" range.end="[54:14]" range.start="[54:3]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </FieldDecl>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202098605679" isDecl="True" isDef="True" lex_parent_id="202368561742" line="55" range.end="[55:8]" range.start="[55:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" display_name="accessFriendClass()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="203515374939" isDecl="True" isDef="True" lex_parent_id="202368561742" line="56" linkage_kind="external" linkage_name="_ZN12ParentClass117accessFriendClassEv" range.end="[58:4]" range.start="[56:3]" return_type="void" spelling="accessFriendClass" storage_class="default_auto" type="void ()" usr="c:@S@ParentClass1@F@accessFriendClass#" visibility="default">
+               
+      
+               <CompoundStmt col="27" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203684457639" line="56" range.end="[58:4]" range.start="[56:27]" sem_parent_id="203515374939" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200231657045" isAssignment="True" line="57" range.end="[57:12]" range.start="[57:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="7" def_id="203096629253" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203331328192" line="57" range.end="[57:8]" range.start="[57:5]" spelling="x" type="int">
+                        
+            
+                        <MemberRefExpr col="5" def_id="200933084024" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202056130375" line="57" range.end="[57:6]" range.start="[57:5]" spelling="p" type="ParentClass"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <IntegerLiteral col="11" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200321910054" line="57" range.end="[57:12]" range.start="[57:11]" type="int"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </ClassDecl>
+         
+  
+         <StructDecl col="8" display_name="MI" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="204001398897" isDecl="True" isDef="True" lex_parent_id="202945296163" line="62" linkage_kind="external" range.end="[67:2]" range.start="[62:1]" spelling="MI" type="MI" usr="c:@S@MI" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="12" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200263234357" inheritance_kind="Public" isRef="True" line="62" range.end="[62:23]" range.start="[62:12]" spelling="class ParentClass" type="ParentClass">
+               
+      
+               <TypeRef col="12" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202387252783" isRef="True" line="62" range.end="[62:23]" range.start="[62:12]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXBaseClassSpecifier col="32" def_id="201708876154" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202452089940" inheritance_kind="Public" isRef="True" line="62" range.end="[62:39]" range.start="[62:25]" spelling="struct foo_str" type="foo_str">
+               
+      
+               <TypeRef col="32" def_id="201708876154" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203920628029" isRef="True" line="62" range.end="[62:39]" range.start="[62:32]" spelling="struct foo_str" type="foo_str"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203343498344" isDecl="True" isDef="True" lex_parent_id="204001398897" line="63" range.end="[63:8]" range.start="[63:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="7" display_name="do_nothing()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="200461681605" isDecl="True" isDef="True" lex_parent_id="204001398897" line="64" linkage_kind="external" linkage_name="_ZN2MI10do_nothingEv" range.end="[66:4]" range.start="[64:3]" return_type="int" spelling="do_nothing" storage_class="default_auto" type="int ()" usr="c:@S@MI@F@do_nothing#" visibility="default">
+               
+      
+               <CompoundStmt col="19" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201262177021" line="64" range.end="[66:4]" range.start="[64:19]" sem_parent_id="200461681605" storage_class="default_auto">
+                  
+        
+                  <ReturnStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201338345201" line="65" range.end="[65:13]" range.start="[65:5]">
+                     
+          
+                     <IntegerLiteral col="12" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="204066047802" line="65" range.end="[65:13]" range.start="[65:12]" type="int"/>
+                     
+        
+                  </ReturnStmt>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </StructDecl>
+         
+  
+         <ClassDecl col="7" display_name="LivingThing" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202267675586" isDecl="True" isDef="True" lex_parent_id="202945296163" line="70" linkage_kind="external" range.end="[80:2]" range.start="[70:1]" size="1" spelling="LivingThing" type="LivingThing" usr="c:@S@LivingThing" visibility="default">
+            
+    
+            <CXXAccessSpecifier access_specifier="Protected" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200278213652" isDecl="True" isDef="True" lex_parent_id="202267675586" line="71" range.end="[71:11]" range.start="[71:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Protected" col="10" display_name="isBreathing" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201679370587" isDecl="True" isDef="True" lex_parent_id="202267675586" line="72" linkage_kind="external" offset="0" range.end="[72:21]" range.start="[72:5]" size="1" spelling="isBreathing" type="bool" usr="c:@S@LivingThing@FI@isBreathing" visibility="default"/>
+            
+    
+            <CXXMethod access_specifier="Protected" col="10" display_name="breathe()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="202470413280" isDecl="True" isDef="True" lex_parent_id="202267675586" line="73" linkage_kind="external" linkage_name="_ZN11LivingThing7breatheEv" mangled_name="_ZN11LivingThing7breatheEv" range.end="[75:6]" range.start="[73:5]" return_type="void" spelling="breathe" storage_class="default_auto" type="void ()" usr="c:@S@LivingThing@F@breathe#" visibility="default">
+               
+      
+               <CompoundStmt col="20" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200403492459" line="73" range.end="[75:6]" range.start="[73:20]" sem_parent_id="202470413280" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="204224898046" isAssignment="True" line="74" range.end="[74:33]" range.start="[74:9]" type="bool">
+                     
+          
+                     <MemberRefExpr col="15" def_id="201679370587" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202769194148" line="74" range.end="[74:26]" range.start="[74:9]" spelling="isBreathing" type="bool">
+                        
+            
+                        <CXXThisExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203055967507" line="74" range.end="[74:13]" range.start="[74:9]" type="LivingThing *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="29" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202558763530" line="74" range.end="[74:33]" range.start="[74:29]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202979118822" isDecl="True" isDef="True" lex_parent_id="202267675586" line="76" range.end="[76:8]" range.start="[76:1]" usr="c:"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="3" display_name="LivingThing()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="202519804222" isDecl="True" isDef="True" lex_parent_id="202267675586" line="77" linkage_kind="external" linkage_name="_ZN11LivingThingC1Ev" mangled_name="_ZN11LivingThingC4Ev" range.end="[79:4]" range.start="[77:3]" return_type="void" spelling="LivingThing" storage_class="default_auto" type="void ()" usr="c:@S@LivingThing@F@LivingThing#" visibility="default">
+               
+      
+               <CompoundStmt col="16" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202933437988" line="77" range.end="[79:4]" range.start="[77:16]" sem_parent_id="202519804222" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203623221515" isAssignment="True" line="78" range.end="[78:30]" range.start="[78:5]" type="bool">
+                     
+          
+                     <MemberRefExpr col="11" def_id="201679370587" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203877744868" line="78" range.end="[78:22]" range.start="[78:5]" spelling="isBreathing" type="bool">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203406658688" line="78" range.end="[78:9]" range.start="[78:5]" type="LivingThing *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="25" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202250533287" line="78" range.end="[78:30]" range.start="[78:25]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXConstructor>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="Animal" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202365494896" isDecl="True" isDef="True" lex_parent_id="202945296163" line="82" linkage_kind="external" range.end="[92:2]" range.start="[82:1]" size="16" spelling="Animal" type="Animal" usr="c:@S@Animal" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="34" def_id="202267675586" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203529189429" inheritance_kind="Protected" isRef="True" isVirtualBase="True" line="82" range.end="[82:45]" range.start="[82:16]" spelling="class LivingThing" type="LivingThing">
+               
+      
+               <TypeRef col="34" def_id="202267675586" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201195858678" isRef="True" line="82" range.end="[82:45]" range.start="[82:34]" spelling="class LivingThing" type="LivingThing"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Protected" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200923056489" isDecl="True" isDef="True" lex_parent_id="202365494896" line="83" range.end="[83:11]" range.start="[83:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Protected" col="9" display_name="breathCount" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200281864422" isDecl="True" isDef="True" lex_parent_id="202365494896" line="84" linkage_kind="external" offset="8" range.end="[84:20]" range.start="[84:5]" size="4" spelling="breathCount" type="int" usr="c:@S@Animal@FI@breathCount" visibility="default"/>
+            
+    
+            <CXXMethod access_specifier="Protected" col="10" display_name="breathe()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="203282426031" isDecl="True" isDef="True" lex_parent_id="202365494896" line="85" linkage_kind="external" linkage_name="_ZN6Animal7breatheEv" mangled_name="_ZN6Animal7breatheEv" range.end="[87:6]" range.start="[85:5]" return_type="void" spelling="breathe" storage_class="default_auto" type="void ()" usr="c:@S@Animal@F@breathe#" visibility="default">
+               
+      
+               <CompoundStmt col="20" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201357290947" line="85" range.end="[87:6]" range.start="[85:20]" sem_parent_id="203282426031" storage_class="default_auto">
+                  
+        
+                  <UnaryOperator col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201525510566" line="86" range.end="[86:28]" range.start="[86:9]" type="int">
+                     
+          
+                     <MemberRefExpr col="15" def_id="200281864422" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202662892127" line="86" range.end="[86:26]" range.start="[86:9]" spelling="breathCount" type="int">
+                        
+            
+                        <CXXThisExpr col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201844832565" line="86" range.end="[86:13]" range.start="[86:9]" type="Animal *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+        
+                  </UnaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200748219127" isDecl="True" isDef="True" lex_parent_id="202365494896" line="88" range.end="[88:8]" range.start="[88:1]" usr="c:"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="3" display_name="Animal()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="201637861782" isDecl="True" isDef="True" lex_parent_id="202365494896" line="89" linkage_kind="external" linkage_name="_ZN6AnimalC1Ev" mangled_name="_ZN6AnimalC4Ev" range.end="[91:4]" range.start="[89:3]" return_type="void" spelling="Animal" storage_class="default_auto" type="void ()" usr="c:@S@Animal@F@Animal#" visibility="default">
+               
+      
+               <CompoundStmt col="11" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202225816679" line="89" range.end="[91:4]" range.start="[89:11]" sem_parent_id="201637861782" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201912331626" isAssignment="True" line="90" range.end="[90:26]" range.start="[90:5]" type="int">
+                     
+          
+                     <MemberRefExpr col="11" def_id="200281864422" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202024857208" line="90" range.end="[90:22]" range.start="[90:5]" spelling="breathCount" type="int">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203426454199" line="90" range.end="[90:9]" range.start="[90:5]" type="Animal *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <IntegerLiteral col="25" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200640702101" line="90" range.end="[90:26]" range.start="[90:25]" type="int"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXConstructor>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="Reptile" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202830954189" isDecl="True" isDef="True" lex_parent_id="202945296163" line="94" linkage_kind="external" range.end="[105:2]" range.start="[94:1]" size="16" spelling="Reptile" type="Reptile" usr="c:@S@Reptile" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="32" def_id="202267675586" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203796680018" inheritance_kind="Public" isRef="True" isVirtualBase="True" line="94" range.end="[94:43]" range.start="[94:17]" spelling="class LivingThing" type="LivingThing">
+               
+      
+               <TypeRef col="32" def_id="202267675586" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201195858678" isRef="True" line="94" range.end="[94:43]" range.start="[94:32]" spelling="class LivingThing" type="LivingThing"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200782861975" isDecl="True" isDef="True" lex_parent_id="202830954189" line="95" range.end="[95:8]" range.start="[95:1]" usr="c:"/>
+            
+    
+            <FieldDecl access_specifier="Public" col="8" display_name="isCrawling" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202849220423" isDecl="True" isDef="True" lex_parent_id="202830954189" line="96" linkage_kind="external" offset="8" range.end="[96:18]" range.start="[96:3]" size="1" spelling="isCrawling" type="bool" usr="c:@S@Reptile@FI@isCrawling" visibility="default"/>
+            
+    
+            <CXXConstructor access_specifier="Public" col="3" display_name="Reptile()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="200022218355" isDecl="True" isDef="True" lex_parent_id="202830954189" line="98" linkage_kind="external" linkage_name="_ZN7ReptileC1Ev" mangled_name="_ZN7ReptileC4Ev" range.end="[100:4]" range.start="[98:3]" return_type="void" spelling="Reptile" storage_class="default_auto" type="void ()" usr="c:@S@Reptile@F@Reptile#" visibility="default">
+               
+      
+               <CompoundStmt col="12" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202621252497" line="98" range.end="[100:4]" range.start="[98:12]" sem_parent_id="200022218355" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203671546356" isAssignment="True" line="99" range.end="[99:28]" range.start="[99:5]" type="bool">
+                     
+          
+                     <MemberRefExpr col="11" def_id="202849220423" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201610523392" line="99" range.end="[99:21]" range.start="[99:5]" spelling="isCrawling" type="bool">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203190669448" line="99" range.end="[99:9]" range.start="[99:5]" type="Reptile *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="24" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203473433469" line="99" range.end="[99:28]" range.start="[99:24]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXConstructor>
+            
+    
+            <CXXAccessSpecifier access_specifier="Protected" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200310107853" isDecl="True" isDef="True" lex_parent_id="202830954189" line="101" range.end="[101:11]" range.start="[101:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Protected" col="10" display_name="crawl()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="203193500334" isDecl="True" isDef="True" lex_parent_id="202830954189" line="102" linkage_kind="external" linkage_name="_ZN7Reptile5crawlEv" mangled_name="_ZN7Reptile5crawlEv" range.end="[104:6]" range.start="[102:5]" return_type="void" spelling="crawl" storage_class="default_auto" type="void ()" usr="c:@S@Reptile@F@crawl#" visibility="default">
+               
+      
+               <CompoundStmt col="18" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202335261873" line="102" range.end="[104:6]" range.start="[102:18]" sem_parent_id="203193500334" storage_class="default_auto">
+                  
+        
+                  <BinaryOperator col="7" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201382306092" isAssignment="True" line="103" range.end="[103:30]" range.start="[103:7]" type="bool">
+                     
+          
+                     <MemberRefExpr col="13" def_id="202849220423" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201092335930" line="103" range.end="[103:23]" range.start="[103:7]" spelling="isCrawling" type="bool">
+                        
+            
+                        <CXXThisExpr col="7" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200890301135" line="103" range.end="[103:11]" range.start="[103:7]" type="Reptile *"/>
+                        
+          
+                     </MemberRefExpr>
+                     
+          
+                     <CXXBoolLiteralExpr col="26" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203055087812" line="103" range.end="[103:30]" range.start="[103:26]" type="bool"/>
+                     
+        
+                  </BinaryOperator>
+                  
+      
+               </CompoundStmt>
+               
+    
+            </CXXMethod>
+            
+  
+         </ClassDecl>
+         
+  
+         <ClassDecl col="7" display_name="Snake" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200961799742" isDecl="True" isDef="True" lex_parent_id="202945296163" line="107" linkage_kind="external" range.end="[110:2]" range.start="[107:1]" spelling="Snake" type="Snake" usr="c:@S@Snake" visibility="default">
+            
+    
+            <CXXBaseClassSpecifier col="25" def_id="202365494896" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203969910042" inheritance_kind="Protected" isRef="True" line="107" range.end="[107:31]" range.start="[107:15]" spelling="class Animal" storage_class="static" type="Animal">
+               
+      
+               <TypeRef col="25" def_id="202365494896" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201725618402" isRef="True" line="107" range.end="[107:31]" range.start="[107:25]" spelling="class Animal" type="Animal"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXBaseClassSpecifier col="33" def_id="202830954189" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201542808135" inheritance_kind="Private" isRef="True" line="107" range.end="[107:40]" range.start="[107:33]" spelling="class Reptile" type="Reptile">
+               
+      
+               <TypeRef col="33" def_id="202830954189" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="200045386364" isRef="True" line="107" range.end="[107:40]" range.start="[107:33]" spelling="class Reptile" type="Reptile"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXBaseClassSpecifier col="42" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="201937206068" inheritance_kind="Private" isRef="True" line="107" range.end="[107:53]" range.start="[107:42]" spelling="class ParentClass" type="ParentClass">
+               
+      
+               <TypeRef col="42" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="202387252783" isRef="True" line="107" range.end="[107:53]" range.start="[107:42]" spelling="class ParentClass" type="ParentClass"/>
+               
+    
+            </CXXBaseClassSpecifier>
+            
+    
+            <CXXAccessSpecifier access_specifier="Public" col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" id="203254204471" isDecl="True" isDef="True" lex_parent_id="200961799742" line="108" range.end="[108:8]" range.start="[108:1]" usr="c:"/>
+            
+    
+            <CXXMethod access_specifier="Public" col="8" def_id="203539464615" display_name="crawl()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.h" funcargs="" id="204159655949" isDecl="True" lex_parent_id="200961799742" line="109" linkage_kind="external" linkage_name="_ZN5Snake5crawlEv" mangled_name="_ZN5Snake5crawlEv" range.end="[109:15]" range.start="[109:3]" return_type="void" spelling="crawl" storage_class="default_auto" type="void ()" usr="c:@S@Snake@F@crawl#" visibility="default"/>
+            
+  
+         </ClassDecl>
+         
+  
+         <FunctionDecl col="16" display_name="foo(struct foo_str)" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" funcargs="struct foo_str" id="202883818811" isDecl="True" isDef="True" lex_parent_id="202945296163" line="3" linkage_kind="external" linkage_name="_Z3foo7foo_str" mangled_name="_Z3foo7foo_str" range.end="[7:2]" range.start="[3:1]" return_type="struct foo_str" spelling="foo" storage_class="default_auto" type="struct foo_str (struct foo_str)" usr="c:@F@foo#$@S@foo_str#" visibility="default">
+            
+    
+            <TypeRef col="8" def_id="201708876154" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203920628029" isRef="True" line="3" range.end="[3:15]" range.start="[3:8]" spelling="struct foo_str" type="foo_str"/>
+            
+    
+            <ParmDecl col="35" display_name="x" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203975056466" isDecl="True" isDef="True" lex_parent_id="202883818811" line="3" linkage_kind="auto" offset="0x20" range.end="[3:36]" range.start="[3:20]" size="12" spelling="x" storage_class="default_auto" type="struct foo_str" usr="c:foo.cpp@93@F@foo#$@S@foo_str#@x" visibility="default">
+               
+      
+               <TypeRef col="27" def_id="201708876154" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203920628029" isRef="True" line="3" range.end="[3:34]" range.start="[3:27]" spelling="struct foo_str" type="foo_str"/>
+               
+    
+            </ParmDecl>
+            
+    
+            <CompoundStmt col="1" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="204293952459" line="4" range.end="[7:2]" range.start="[4:1]" sem_parent_id="202883818811" storage_class="default_auto">
+               
+      
+               <CompoundAssignOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203832265462" isAssignment="True" line="5" range.end="[5:13]" range.start="[5:5]" type="int">
+                  
+        
+                  <MemberRefExpr col="7" def_id="203149166802" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="200704822426" line="5" range.end="[5:8]" range.start="[5:5]" spelling="x" type="int">
+                     
+          
+                     <DeclRefExpr col="5" def_id="203975056466" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="202550370036" line="5" range.end="[5:6]" range.start="[5:5]" spelling="x" type="struct foo_str"/>
+                     
+        
+                  </MemberRefExpr>
+                  
+        
+                  <IntegerLiteral col="12" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="200810918202" line="5" range.end="[5:13]" range.start="[5:12]" type="int"/>
+                  
+      
+               </CompoundAssignOperator>
+               
+      
+               <ReturnStmt col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="201296505675" line="6" range.end="[6:13]" range.start="[6:5]">
+                  
+        
+                  <CallExpr col="12" def_id="201837162357" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="202402646809" line="6" range.end="[6:13]" range.start="[6:12]" spelling="foo_str" type="struct foo_str">
+                     
+          
+                     <UnexposedExpr col="12" def_id="203975056466" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203245584033" line="6" range.end="[6:13]" range.start="[6:12]" spelling="x" type="struct foo_str">
+                        
+            
+                        <DeclRefExpr col="12" def_id="203975056466" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="201088442041" line="6" range.end="[6:13]" range.start="[6:12]" spelling="x" type="struct foo_str"/>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </CallExpr>
+                  
+      
+               </ReturnStmt>
+               
+    
+            </CompoundStmt>
+            
+  
+         </FunctionDecl>
+         
+  
+         <FunctionDecl col="6" display_name="accessFriendClassGlobal()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" funcargs="" id="202651437238" isDecl="True" isDef="True" lex_parent_id="202945296163" line="9" linkage_kind="external" linkage_name="_Z23accessFriendClassGlobalv" mangled_name="_Z23accessFriendClassGlobalv" range.end="[12:2]" range.start="[9:1]" return_type="void" spelling="accessFriendClassGlobal" storage_class="default_auto" type="void ()" usr="c:@F@accessFriendClassGlobal#" visibility="default">
+            
+    
+            <CompoundStmt col="31" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="200095886023" line="9" range.end="[12:2]" range.start="[9:31]" sem_parent_id="202651437238" storage_class="default_auto">
+               
+      
+               <DeclStmt col="3" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="201434069074" line="10" range.end="[10:17]" range.start="[10:3]">
+                  
+        
+                  <VarDecl col="15" display_name="p" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="200345345385" isDecl="True" isDef="True" lex_parent_id="202651437238" line="10" linkage_kind="auto" offset="0x20" range.end="[10:16]" range.start="[10:3]" size="32" spelling="p" storage_class="default_auto" type="ParentClass" usr="c:foo.cpp@207@F@accessFriendClassGlobal#@p" visibility="default">
+                     
+          
+                     <TypeRef col="3" def_id="201654262830" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="202387252783" isRef="True" line="10" range.end="[10:14]" range.start="[10:3]" spelling="class ParentClass" type="ParentClass"/>
+                     
+          
+                     <CallExpr col="15" def_id="204066726951" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="201776416328" line="10" range.end="[10:16]" range.start="[10:15]" sem_parent_id="200345345385" spelling="ParentClass" storage_class="default_auto" type="ParentClass"/>
+                     
+        
+                  </VarDecl>
+                  
+      
+               </DeclStmt>
+               
+      
+               <BinaryOperator col="3" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="202160438421" isAssignment="True" line="11" range.end="[11:10]" range.start="[11:3]" type="int">
+                  
+        
+                  <MemberRefExpr col="5" def_id="203096629253" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="200507701280" line="11" range.end="[11:6]" range.start="[11:3]" spelling="x" type="int">
+                     
+          
+                     <DeclRefExpr col="3" def_id="200345345385" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203608844841" line="11" range.end="[11:4]" range.start="[11:3]" spelling="p" type="ParentClass"/>
+                     
+        
+                  </MemberRefExpr>
+                  
+        
+                  <IntegerLiteral col="9" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203333231832" line="11" range.end="[11:10]" range.start="[11:9]" type="int"/>
+                  
+      
+               </BinaryOperator>
+               
+    
+            </CompoundStmt>
+            
+  
+         </FunctionDecl>
+         
+  
+         <CXXMethod access_specifier="Public" col="13" display_name="crawl()" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" funcargs="" id="203539464615" isDecl="True" isDef="True" lex_parent_id="202945296163" line="14" linkage_kind="external" linkage_name="_ZN5Snake5crawlEv" range.end="[17:2]" range.start="[14:1]" return_type="void" sem_parent_id="200961799742" spelling="crawl" storage_class="default_auto" type="void ()" usr="c:@S@Snake@F@crawl#" visibility="default">
+            
+    
+            <TypeRef col="6" def_id="200961799742" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203939926406" isRef="True" line="14" range.end="[14:11]" range.start="[14:6]" spelling="class Snake" type="Snake"/>
+            
+    
+            <CompoundStmt col="21" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203914130117" line="14" range.end="[17:2]" range.start="[14:21]" sem_parent_id="203539464615" storage_class="default_auto">
+               
+      
+               <CallExpr col="5" def_id="203282426031" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203490846124" line="15" range.end="[15:20]" range.start="[15:5]" spelling="breathe" type="void">
+                  
+        
+                  <MemberRefExpr col="11" def_id="203282426031" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="201320191370" line="15" range.end="[15:18]" range.start="[15:5]" spelling="breathe" type="&lt;bound member function type&gt;">
+                     
+          
+                     <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="202801646731" line="15" range.end="[15:9]" range.start="[15:5]" type="Animal *">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="202960717052" line="15" range.end="[15:9]" range.start="[15:5]" type="Snake *"/>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </MemberRefExpr>
+                  
+      
+               </CallExpr>
+               
+      
+               <BinaryOperator col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="200662590223" isAssignment="True" line="16" range.end="[16:28]" range.start="[16:5]" type="bool">
+                  
+        
+                  <MemberRefExpr col="11" def_id="202849220423" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203486810435" line="16" range.end="[16:21]" range.start="[16:5]" spelling="isCrawling" type="bool">
+                     
+          
+                     <UnexposedExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="202035073304" line="16" range.end="[16:9]" range.start="[16:5]" type="Reptile *">
+                        
+            
+                        <CXXThisExpr col="5" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="200069637102" line="16" range.end="[16:9]" range.start="[16:5]" type="Snake *"/>
+                        
+          
+                     </UnexposedExpr>
+                     
+        
+                  </MemberRefExpr>
+                  
+        
+                  <CXXBoolLiteralExpr col="24" file="/data/user-home/srijoni/PIN_Tests/smartKT/testsuite/inherit/lib/foo.cpp" id="203643243458" line="16" range.end="[16:28]" range.start="[16:24]" type="bool"/>
+                  
+      
+               </BinaryOperator>
+               
+    
+            </CompoundStmt>
+            
+  
+         </CXXMethod>
+         
+
+      </TranslationUnit>
+   </DYNAMIC_LIBRARY>
+</elf>

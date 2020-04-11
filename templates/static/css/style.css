@@ -1,0 +1,26 @@
+.btn{
+    background-color: rgb(102,153,255);
+}
+
+.exampleContainer {
+                background-color: #F8F8F8;
+                border: 1px solid #EAEAEA;
+                border-radius: 3px;
+}
+
+.exampleContainer .zoomContainer .zoomTarget {
+                background-color: white;
+                border: 1px solid #EAEAEA;
+                width:137px;
+                height:50px;
+                margin:10px;
+                padding:20px;
+                float:left;
+}
+
+#inputCanvas{
+    border: 2px solid rgb(102,153,255);
+}
+#footer{
+    margin-top: 100px;
+}

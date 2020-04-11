@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="row text-center">
+  <h1>Results</h1>
+  <div class="zoomViewport exampleContainer">
+    <div class="zoomContainer">
+      {% for d in dep recursive %}
+        <div class="zoomTarget" data-closeclick="true"> {{ d.split('/')[-1] }} </div>
+      {% endfor %}
+      <div class="clearer"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

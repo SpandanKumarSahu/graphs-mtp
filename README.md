@@ -4,6 +4,8 @@
 
 Requirements: Python with flask
 
+Note: Change 'project_name' (will fix this with a config file)
+
 ``` bash
 $ git clone https://github.com/spandankumarsahu/graphs-mtp
 $ cd graphs-mtp

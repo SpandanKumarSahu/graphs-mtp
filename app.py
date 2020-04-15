@@ -24,14 +24,14 @@ def to_dot (li, fn):
             else:
                 fp.write('"{}"\n'.format(el))
         fp.write('}\n')
-    os.system("dot -Tpng {}.dot -o {}.png".format(fn, fn))
+    os.system("sfdp -Tsvg -Goverlap=prism {}.dot -o {}.svg".format(fn, fn))
 
 def shorten(path):
     ls = path.split('/')
     idx = ls.index(project_name)
     return '/'.join(ls[idx+1:])
 
-def create_dep_map():
+def create_dep_map(fillMe=None, toDot=True):
     dep = pickle.load(open("data/dependencies.p", "rb"))
     ls = []
     for d in dep:
@@ -42,16 +42,23 @@ def create_dep_map():
         ls.extend([(f, d, "OBJ") for f in dep[d] if f.split('.').count('o') > 0])
         ls.extend([(f, d, "SO/DL") for f in dep[d] if f.split('.').count('so') > 0])
         ls.extend([(f, d, "AR") for f in dep[d] if f.split('.').count('a') > 0])
-    filename = "images/dep"
     ls = [(shorten(d), shorten(f), t) for (d,f,t) in ls]
-    to_dot(ls, filename)
-    return filename + ".png"
+    if fillMe is not None:
+        fillMe.extend(ls)
+    if toDot is True:
+        filename = "templates/static/images/dep"
+        to_dot(ls, filename)
+        return filename + ".png"
 
 def structclassmap(root):
     #{TODO}: Handle Friends, Templates, Field variables
     ls = []
     # Do it for classes
     for c in root.findall(".//ClassDecl"):
+        try:
+            ls.append(c.attrib['spelling'])
+        except:
+            continue
         # Inheritance edges
         for p in c.findall("./CXXBaseClassSpecifier"):
             ls.append((c.attrib['spelling'], p.attrib['type'], p.attrib['inheritance_kind']))
@@ -62,6 +69,10 @@ def structclassmap(root):
 
     # Do it for structs
     for c in root.findall(".//StructDecl"):
+        try:
+            ls.append(c.attrib['spelling'])
+        except:
+            continue
         # Inheritance edges
         for p in c.findall("./CXXBaseClassSpecifier"):
             ls.append((c.attrib['spelling'], p.attrib['type'], p.attrib['inheritance_kind']))
@@ -69,20 +80,31 @@ def structclassmap(root):
         # for d in c.findall("./FIELD_DECL"):
         #     for t in d.findall(".//TYPE_REF"):
         #         ls.append((str(t.attrib['type'].split()[-1]), c.attrib['spelling'], d.attrib['access_specifier']))
-    filename = "images/classmap"
+    filename = "templates/static/images/classmap"
     to_dot(ls, filename)
     return filename + ".png"
+
+def create_extern_link(ls, croot):
+    for var in croot.findall(".//VarDecl[@storage_class='extern']"):
+        if 'def_id' not in var.attrib:
+            continue
+        name = var.attrib['type']+ " " + var.attrib['spelling']
+        ls.append((name, shorten(var.attrib['file']), "REFERED"))
+        for x in croot.findall('.//VarDecl[@id="'+var.attrib['def_id']+'"]'):
+            ls.append((name, shorten(x.attrib['file']), "DEFINED"))
+    for func in croot.findall(".//FunctionDecl[@storage_class='extern']"):
+        if 'def_id' not in func.attrib:
+            continue
+        name = func.attrib['type']+ " " + func.attrib['spelling']
+        ls.append((name, shorten(func.attrib['file']), "REFERED"))
+        for x in croot.findall('.//FunctionDecl[@id="'+func.attrib['def_id']+'"]'):
+            ls.append((name, shorten(x.attrib['file']), "DEFINED"))
 
 @app.route('/', methods=['GET'])
 def index():
     title = 'Create the input'
     return render_template('layouts/index.html',
                            title=title)
-
-@app.route('/images', methods=['GET'])
-def getImage():
-    return send_file(os.path.join('images', request.args.get('file'))+'.png',
-        mimetype='image/gif')
 
 @app.route('/dependency', methods=['GET'])
 def results():
@@ -99,9 +121,13 @@ def dependency_dev():
 
 @app.route('/externdev', methods=['GET'])
 def extern_dev():
-    create_dep_map()
-    title = "WIP: Dependency"
-    return render_template('layouts/results_dev.html', title=title)
+    ls = []
+    croot = ET.parse("data/final_static.xml").getroot()
+    create_extern_link(ls, croot)
+    create_dep_map(ls, False)
+    to_dot(ls, "templates/static/images/extern")
+    title = "WIP: Extern"
+    return render_template('layouts/extern_dev.html', title=title)
 
 @app.route('/classmapdev', methods=['GET'])
 def classmap_dev():

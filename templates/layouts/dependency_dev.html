@@ -38,7 +38,7 @@
     <div id="spandan"></div>
     <script type="text/javascript">
     var container = document.getElementById('mynetwork');
-    var DOTstring = '{{ data|safe }}';
+    var DOTstring = {{ data|safe }};
     var parsedData = vis.parseDOTNetwork(DOTstring);
     var nodes = new vis.DataSet(parsedData.nodes);
     var edges = new vis.DataSet(parsedData.edges);
@@ -50,23 +50,23 @@
 
     var network = new vis.Network(container, data, options);
     network.setOptions({nodes: {shape: 'box'}, physics: {enabled: false}});
-    var symbols = {{symbols|safe}};
-
-    // Hide the edges from symbols
-    for(var i=0; i<symbols.length; i++){
-      symEdges = network.getConnectedEdges(symbols[i]);
-      for(var j=0; j<symEdges.length; j++){
-        edges.update([{id: symEdges[j], hidden: true}]);
-      }
+    var allNodes = nodes.getIds();
+    for(var i=0; i<allNodes.length; i++){
+      nodes.update([{id: allNodes[i], hidden: true}]);
+    }
+    var toShowNodes = {{execs|safe}}
+    for(var i=0; i<toShowNodes.length; i++){
+      nodes.update([{id: toShowNodes[i], hidden:false}]);
     }
 
     network.on('click', function(properties){
       var ids = properties.nodes;
       if(ids.length == 0) return;
-      if(symbols.includes(ids[0])){
-        symEdges = network.getConnectedEdges(ids[0]);
-        for(var j=0; j<symEdges.length; j++){
-          edges.update([{id: symEdges[j], hidden: false}]);
+      var clickedNode = nodes.get(ids)[0];
+      if(clickedNode.hidden == false){
+        var deps = this.getConnectedNodes(clickedNode.id, "from");
+        for(var i=0; i<deps.length; i++){
+          nodes.update([{id: deps[i], hidden: false}]);
         }
       }
     });
@@ -74,10 +74,11 @@
     network.on('doubleClick', function(properties){
       var ids = properties.nodes;
       if(ids.length == 0) return;
-      if(symbols.includes(ids[0])){
-        symEdges = network.getConnectedEdges(ids[0]);
-        for(var j=0; j<symEdges.length; j++){
-          edges.update([{id: symEdges[j], hidden: true}]);
+      var clickedNode = nodes.get(ids)[0];
+      if(clickedNode.hidden == false){
+        var deps = this.getConnectedNodes(clickedNode.id, "from");
+        for(var i=0; i<deps.length; i++){
+          nodes.update([{id: deps[i], hidden: true}]);
         }
       }
     });

@@ -1,8 +1,8 @@
 from __future__ import print_function
-from flask import Flask, render_template, make_response
+from flask import Flask, render_template, make_response, Markup
 from flask import redirect, request, jsonify, url_for, send_file
 
-import io, os, uuid, pickle
+import io, os, uuid, pickle, json
 from xml.etree.ElementTree import Element, SubElement
 from xml.etree import ElementTree as ET
 from xml.dom import minidom
@@ -12,7 +12,7 @@ app.secret_key = 's3cr3t'
 app.debug = True
 app._static_folder = os.path.abspath("templates/static/")
 
-project_name = 'libpng'
+project_name = 'SimplComprTest'
 CXX_EXTENSIONS = ['c', 'cpp', 'cc']
 
 def to_dot (li, fn):
@@ -100,6 +100,30 @@ def create_extern_link(ls, croot):
         for x in croot.findall('.//FunctionDecl[@id="'+func.attrib['def_id']+'"]'):
             ls.append((name, shorten(x.attrib['file']), "DEFINED"))
 
+def visDOT(filename):
+    with open(filename, "r") as f:
+        data = f.readlines()
+    data = [x.strip() for x in data]
+    data = data[0]+'; '.join(data[1:-1])+"; }"
+    return data
+
+def addDOT(filename, line, col, data):
+    with open(filename, 'r') as f:
+        content = f.readlines()
+    content[line] = content[line][:col] + "'" + data + "';\n"
+    with open(filename, 'w') as f:
+        f.write(''.join(content))
+
+def getExecutables():
+    dep = pickle.load(open("data/dependencies.p", "rb"))
+    ls = []
+    for k in dep:
+        if k == "compile_instrs":
+            continue
+        elif len(os.path.splitext(k)[1]) == 0:
+            ls.append(shorten(k))
+    return ls
+
 @app.route('/', methods=['GET'])
 def index():
     title = 'Create the input'
@@ -116,18 +140,24 @@ def results():
 @app.route('/dependencydev', methods=['GET'])
 def dependency_dev():
     create_dep_map()
-    title = "WIP: Spandan"
-    return render_template('layouts/results_dev.html', title=title)
+    execs = getExecutables()
+    data = visDOT('templates/static/images/dep.dot')
+    # addDOT('templates/layouts/dependency_dev.html', 39, 16, data)
+    title = "Dependency Map"
+    return render_template('layouts/dependency_dev.html', data=json.dumps(data), title=title, execs=json.dumps(execs))
 
 @app.route('/externdev', methods=['GET'])
 def extern_dev():
     ls = []
     croot = ET.parse("data/final_static.xml").getroot()
     create_extern_link(ls, croot)
+    symbols = list(set([x[0] for x in ls]))
     create_dep_map(ls, False)
     to_dot(ls, "templates/static/images/extern")
-    title = "WIP: Extern"
-    return render_template('layouts/extern_dev.html', title=title)
+    data = visDOT("templates/static/images/extern.dot")
+    title = "Extern Linkage"
+    return render_template('layouts/extern_dev.html', title=title,
+    data=data, symbols=symbols)
 
 @app.route('/classmapdev', methods=['GET'])
 def classmap_dev():

@@ -13,21 +13,13 @@
   <body>
     <div class="container">
         <nav class="navbar navbar-default" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <a class="navbar-brand" href="#"></a>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/">Home</a></li>
-              <li><a href="/dependency">Dependency</a></li>
-              <li><a href="/dependencydev">Dev-Dependency</a></li>
-              <li><a href="/classmapdev">Dev-ClassMap</a></li>
-              <li><a href="/externdev">Dev-ExternMap</a></li>
+              <li><a href="/cfgdev">ControlFlowGraph</a></li>
+              <li><a href="/dependencydev">DependencyMap</a></li>
+              <li><a href="/classmapdev">ClassMap</a></li>
+              <li><a href="/externdev">ExternMap</a></li>
             </ul>
           </div>
         </nav>
@@ -49,7 +41,7 @@
     var options = parsedData.options;
 
     var network = new vis.Network(container, data, options);
-    network.setOptions({nodes: {shape: 'box'}, physics: {enabled: false}});
+    network.setOptions({nodes: {shape: 'box'}, physics: {enabled: false}, interaction:{navigationButtons:true, keyboard:true}});
     var symbols = {{symbols|safe}};
 
     // Hide the edges from symbols

@@ -51,8 +51,9 @@ def create_dep_map(fillMe=None, toDot=True):
         return filename + ".png"
 
 def structclassmap(root):
-    #{TODO}: Handle Friends, Templates, Field variables
+    #{TODO}: Handle Friends, Templates(?)
     ls = []
+
     # Do it for classes
     for c in root.findall(".//ClassDecl"):
         try:
@@ -62,6 +63,11 @@ def structclassmap(root):
         # Inheritance edges
         for p in c.findall("./CXXBaseClassSpecifier"):
             ls.append((c.attrib['spelling'], p.attrib['type'], p.attrib['inheritance_kind']))
+        # Nested Classes and Structs:
+        for p in c.findall("./ClassDecl"):
+            ls.append((p.attrib['spelling'], c.attrib['spelling'], "Nested"))
+        for p in c.findall("./StructDecl"):
+            ls.append((p.attrib['spelling'], c.attrib['spelling'], "Nested"))
         # # dependency edges
         # for d in c.findall("./FIELD_DECL"):
         #     for t in d.findall(".//TYPE_REF"):
@@ -76,6 +82,12 @@ def structclassmap(root):
         # Inheritance edges
         for p in c.findall("./CXXBaseClassSpecifier"):
             ls.append((c.attrib['spelling'], p.attrib['type'], p.attrib['inheritance_kind']))
+        # Nested Classes and Structs:
+        for p in c.findall("./ClassDecl"):
+            ls.append((p.attrib['spelling'], c.attrib['spelling'], "Nested"))
+        for p in c.findall("./StructDecl"):
+            ls.append((p.attrib['spelling'], c.attrib['spelling'], "Nested"))
+
         # # dependency edges
         # for d in c.findall("./FIELD_DECL"):
         #     for t in d.findall(".//TYPE_REF"):
@@ -163,8 +175,19 @@ def extern_dev():
 def classmap_dev():
     croot = ET.parse("data/final_static.xml").getroot()
     structclassmap(croot)
-    title = "WIP: Class"
-    return render_template('layouts/classmap_dev.html', title=title)
+    data = visDOT("templates/static/images/classmap.dot")
+    title = "Class & Struct"
+    return render_template('layouts/classmap_dev.html', title=title, data=json.dumps(data))
+
+@app.route('/cfgdev', methods=['GET'])
+def cfg_dev():
+    os.system("python3 aggregrate.py")
+    data = visDOT("templates/static/images/cfg.dot")
+    title = "Control Flow"
+    funcList, block2coverage, block2labels = pickle.load(open("templates/static/images/cfg.pkl", "rb"))
+    return render_template('layouts/cfg_dev.html', title=title, data=json.dumps(data),
+    funcList=json.dumps(funcList), block2coverage=json.dumps(block2coverage),
+    block2labels=json.dumps(block2labels))
 
 
 if __name__ == '__main__':

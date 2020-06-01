@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <title>{{ title }}</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">Home</a></li>
+              <li><a href="/cfgdev">ControlFlowGraph</a></li>
+              <li><a href="/dependencydev">DependencyMap</a></li>
+              <li><a href="/classmapdev">ClassMap</a></li>
+              <li><a href="/externdev">ExternMap</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div id="content" class="container main-container">
+    {% block content %}{% endblock %}</div>
+    <div id="mynetwork" style="width:auto;height:800px"></div>
+    <div id="spandan"></div>
+    <script type="text/javascript">
+      var container = document.getElementById('mynetwork');
+      var DOTstring = {{ data|safe }};
+      var parsedData = vis.parseDOTNetwork(DOTstring);
+      var nodes = new vis.DataSet(parsedData.nodes);
+      var edges = new vis.DataSet(parsedData.edges);
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+      var options = parsedData.options;
+
+      var network = new vis.Network(container, data, options);
+      network.setOptions({nodes: {shape: 'box'}, physics: {enabled: true}, interaction:{navigationButtons:true, keyboard:true}});
+
+      var block2coverage = {{block2coverage|safe}};
+
+      function clusterColor(func){
+        if(block2coverage[func+"#0"] == true){
+            return '#32cd32';
+        }
+        else{
+            return '#f08080';
+        }
+      }
+
+      function nodeColor(isVisited){
+        if(isVisited == true){
+            return '#98fB98';
+        }
+        else{
+            return '#ffdab9';
+        }
+      }
+
+      // color the visited nodes
+      for(var key in block2coverage){
+        nodes.update([{id:key, color:nodeColor(block2coverage[key])}]);
+      }
+
+      function clusterSingle(func){
+        clusterOptionsByData = {
+            joinCondition: function (childOptions) {
+                return childOptions.id.split("#")[0] == func; // the color is fully defined in the node.
+            },
+            processProperties: function (clusterOptions, childNodes, childEdges) {
+                clusterOptions.mass = childNodes.length;
+                return clusterOptions;
+            },
+            clusterNodeProperties: {id: func, borderWidth: 3, shape: 'box', color:clusterColor(func), label:func, size:100}
+        };
+        network.cluster(clusterOptionsByData);
+      }
+
+      function clusterByFunc() {
+        var funcList = {{funcList|safe}};
+        var clusterOptionsByData;
+        for (var i = 0; i < funcList.length; i++) {
+          clusterSingle(funcList[i]);
+        }
+      }
+
+      // //Initial clustering
+      clusterByFunc();
+
+      network.on("click", function(params) {
+        if (params.nodes.length == 1) {
+          if (network.isCluster(params.nodes[0]) == true) {
+            network.openCluster(params.nodes[0]);
+          } else {
+            clusterSingle(params.nodes[0].split('#')[0]);
+          }
+        }
+      });
+
+      network.on("doubleClick", function(params) {
+        if (params.nodes.length == 1) {
+          if (network.isCluster(params.nodes[0]) == false) {
+            clusterSingle(params.nodes[0].split('#')[0]);
+          }
+        }
+      });
+
+    </script>
+    <footer>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </footer>
+  </body>
+</html>
